@@ -1,9 +1,3 @@
-<style>
-    r{ color: #ff5b5b; }
-    g{ color: lightgreen; }
-    y{ color: yellow; }
-</style>
-
 # Japanese Grammar Notes
 A curated collection of Japanese grammar notes that may prove helpful.
 
