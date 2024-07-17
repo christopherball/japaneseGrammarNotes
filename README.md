@@ -46,75 +46,75 @@ A curated collection of Japanese grammar notes that may prove helpful.
 
 Used to connect two independent sentences together.
 
-| Category                                            | Conjunction                                                        |
-| :-------------------------------------------------- | :----------------------------------------------------------------- |
-| Cause & Effect, Reason & Result, Situation & Result | かく(し)て                                                         |
-|                                                     | こうして                                                           |
-|                                                     | したがって                                                         |
-|                                                     | すると                                                             |
-|                                                     | そこで                                                             |
-|                                                     | その<ruby>結果<rt>けっか</rt></ruby>                               |
-|                                                     | そのため(に)                                                       |
-|                                                     | それで                                                             |
-|                                                     | それ<ruby>故<rt>ゆえ</rt></ruby>(に)                               |
-|                                                     | だから                                                             |
-|                                                     | ですから                                                           |
-| But                                                 | (だ)けど                                                           |
-|                                                     | けれども                                                           |
-|                                                     | しかし                                                             |
-|                                                     | そのくせ                                                           |
-|                                                     | それでも                                                           |
-|                                                     | それなのに                                                         |
-|                                                     | それにしては                                                       |
-|                                                     | それにしても                                                       |
-|                                                     | だが                                                               |
-|                                                     | だからと<ruby>言<rt>い</rt></ruby>って                             |
-|                                                     | ただ                                                               |
-|                                                     | ただし                                                             |
-|                                                     | ですが                                                             |
-|                                                     | ですけ(れ)ども                                                     |
-|                                                     | でも                                                               |
-|                                                     | ところが                                                           |
-|                                                     | とは<ruby>言<rt>い</rt></ruby>うものの                             |
-|                                                     | とは<ruby>言<rt>い</rt></ruby>え                                   |
-|                                                     | とは<ruby>言<rt>い</rt></ruby>っても                               |
-|                                                     | (それ)にもかかわらず                                               |
-|                                                     | もっとも                                                           |
-| And                                                 | おまけに                                                           |
-|                                                     | しかも                                                             |
-|                                                     | そ(う)して                                                         |
-|                                                     | その<ruby>上<rt>うえ</rt></ruby>(に)                               |
-|                                                     | それから                                                           |
-|                                                     | それと                                                             |
-|                                                     | それに                                                             |
-|                                                     | そればかりか                                                       |
-|                                                     | そればかりでなく                                                   |
-|                                                     | また                                                               |
-| Or                                                  | あるいは                                                           |
-|                                                     | それとも                                                           |
-|                                                     | または                                                             |
-| To change the subject                               | さて                                                               |
-|                                                     | それはそうと                                                       |
-|                                                     | ときに                                                             |
-|                                                     | ところで                                                           |
-|                                                     | <ruby>話<rt>はなし</rt></ruby><ruby>変<rt>か</rt></ruby>わって     |
-|                                                     | <ruby>話<rt>はなし</rt></ruby>は<ruby>変<rt>か</rt></ruby>わります |
-| Paraphrasing                                        | <ruby>言<rt>い</rt></ruby>い<ruby>換<rt>か</rt></ruby>えると       |
-|                                                     | <ruby>言<rt>い</rt></ruby>い<ruby>換<rt>か</rt></ruby>えれば       |
-|                                                     | <ruby>結<rt>けっ</rt></ruby><ruby>局<rt>きょく</rt></ruby>         |
-|                                                     | つまり                                                             |
-|                                                     | <ruby>要<rt>よう</rt></ruby>するに                                 |
-| For example                                         | <ruby>例<rt>たと</rt></ruby>えば                                   |
-|                                                     | <ruby>例<rt>れい</rt></ruby>を<ruby>挙<rt>あ</rt></ruby>げると     |
-| A reason for something                              | と<ruby>言<rt>い</rt></ruby>いますのは                             |
-|                                                     | と<ruby>言<rt>い</rt></ruby>うのは                                 |
-|                                                     | なぜかって<ruby>言<rt>い</rt></ruby>うと                           |
-|                                                     | なぜかと<ruby>言<rt>い</rt></ruby>うと                             |
-|                                                     | なぜかと<ruby>言<rt>い</rt></ruby>えば                             |
-|                                                     | なぜなら(ば)                                                       |
-| Contrast                                            | <ruby>一方<rt>いっぽう</rt></ruby>                                 |
-|                                                     | <ruby>他方<rt>たほう</rt></ruby>                                   |
-|                                                     | それに<ruby>対<rt>たい</rt></ruby>して                             |
+| Category               | Conjunction                                                        |
+| :--------------------- | :----------------------------------------------------------------- |
+| Cause & Effect /       | かく(し)て                                                         |
+| Reason & Result /      | こうして                                                           |
+| Situation & Result     | したがって                                                         |
+|                        | すると                                                             |
+|                        | そこで                                                             |
+|                        | その<ruby>結果<rt>けっか</rt></ruby>                               |
+|                        | そのため(に)                                                       |
+|                        | それで                                                             |
+|                        | それ<ruby>故<rt>ゆえ</rt></ruby>(に)                               |
+|                        | だから                                                             |
+|                        | ですから                                                           |
+| But                    | (だ)けど                                                           |
+|                        | けれども                                                           |
+|                        | しかし                                                             |
+|                        | そのくせ                                                           |
+|                        | それでも                                                           |
+|                        | それなのに                                                         |
+|                        | それにしては                                                       |
+|                        | それにしても                                                       |
+|                        | だが                                                               |
+|                        | だからと<ruby>言<rt>い</rt></ruby>って                             |
+|                        | ただ                                                               |
+|                        | ただし                                                             |
+|                        | ですが                                                             |
+|                        | ですけ(れ)ども                                                     |
+|                        | でも                                                               |
+|                        | ところが                                                           |
+|                        | とは<ruby>言<rt>い</rt></ruby>うものの                             |
+|                        | とは<ruby>言<rt>い</rt></ruby>え                                   |
+|                        | とは<ruby>言<rt>い</rt></ruby>っても                               |
+|                        | (それ)にもかかわらず                                               |
+|                        | もっとも                                                           |
+| And                    | おまけに                                                           |
+|                        | しかも                                                             |
+|                        | そ(う)して                                                         |
+|                        | その<ruby>上<rt>うえ</rt></ruby>(に)                               |
+|                        | それから                                                           |
+|                        | それと                                                             |
+|                        | それに                                                             |
+|                        | そればかりか                                                       |
+|                        | そればかりでなく                                                   |
+|                        | また                                                               |
+| Or                     | あるいは                                                           |
+|                        | それとも                                                           |
+|                        | または                                                             |
+| To change the subject  | さて                                                               |
+|                        | それはそうと                                                       |
+|                        | ときに                                                             |
+|                        | ところで                                                           |
+|                        | <ruby>話<rt>はなし</rt></ruby><ruby>変<rt>か</rt></ruby>わって     |
+|                        | <ruby>話<rt>はなし</rt></ruby>は<ruby>変<rt>か</rt></ruby>わります |
+| Paraphrasing           | <ruby>言<rt>い</rt></ruby>い<ruby>換<rt>か</rt></ruby>えると       |
+|                        | <ruby>言<rt>い</rt></ruby>い<ruby>換<rt>か</rt></ruby>えれば       |
+|                        | <ruby>結<rt>けっ</rt></ruby><ruby>局<rt>きょく</rt></ruby>         |
+|                        | つまり                                                             |
+|                        | <ruby>要<rt>よう</rt></ruby>するに                                 |
+| For example            | <ruby>例<rt>たと</rt></ruby>えば                                   |
+|                        | <ruby>例<rt>れい</rt></ruby>を<ruby>挙<rt>あ</rt></ruby>げると     |
+| A reason for something | と<ruby>言<rt>い</rt></ruby>いますのは                             |
+|                        | と<ruby>言<rt>い</rt></ruby>うのは                                 |
+|                        | なぜかって<ruby>言<rt>い</rt></ruby>うと                           |
+|                        | なぜかと<ruby>言<rt>い</rt></ruby>うと                             |
+|                        | なぜかと<ruby>言<rt>い</rt></ruby>えば                             |
+|                        | なぜなら(ば)                                                       |
+| Contrast               | <ruby>一方<rt>いっぽう</rt></ruby>                                 |
+|                        | <ruby>他方<rt>たほう</rt></ruby>                                   |
+|                        | それに<ruby>対<rt>たい</rt></ruby>して                             |
 
 ### Subordinate Conjunctions
 
