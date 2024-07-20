@@ -137,7 +137,7 @@ ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 > 
 > 
 
-**Function**: ${\textsf{\color{orange}purpose}}$\
+**Function**: ${\textsf{\color{orange}intention or purpose}}$\
 **Description**: Shows the reason for an action.\
 **Examples**:
 > 
