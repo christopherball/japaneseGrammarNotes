@@ -23,19 +23,19 @@ A curated collection of Japanese grammar notes that may prove helpful.
 ### が
 ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 
-**Function**: ${\textsf{\color{orange}subject}}$\
+**Function**: ${\textsf{\color{orange}subject emphasizer}}$\
 **Description**: Identifies who or what is doing the action or being described.\
 **Examples**:
 > 
 > 
 
-**Function**: ${\textsf{\color{orange}object}}$\
-**Description**: Used with certain predicates (like すき, ほしい, できる).\
+**Function**: ${\textsf{\color{orange}desire, need, ability, or opinion}}$\
+**Description**: Used with certain predicates (like すき, ほしい, できる) to express desire, need, ability or opinion.\
 **Examples**:
 > 
 > 
 
-**Function**: ${\textsf{\color{orange}"but"}}$\
+**Function**: ${\textsf{\color{orange}"but" conjunction}}$\
 **Description**: Can connect contrasting clauses.\
 **Examples**:
 > 
