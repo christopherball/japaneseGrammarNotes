@@ -20,9 +20,8 @@ A curated collection of Japanese grammar notes that may prove helpful.
 
 ## Fundamental Particles
 
-### が
 ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
-
+### が
 **Function**: ${\textsf{\color{orange}subject emphasizer}}$\
 **Description**: Identifies who or what is doing the action or being described.\
 **Examples**:
@@ -41,27 +40,24 @@ ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 > 
 > 
 
-### から
 ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
-
+### から
 **Function**: ${\textsf{\color{orange}"from", a reason or cause}}$\
 **Description**: After nouns, typically translates to "from", whereas after verbs and adjectives, indicates a reason or cause.\
 **Examples**:
 > 
 > 
 
-### だけ
 ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
-
+### だけ
 **Function**: ${\textsf{\color{orange}"only" or "just"}}$\
 **Description**: Indicates a limit imposed upon something.\
 **Examples**:
 > 
 > 
 
-### で
 ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
-
+### で
 **Function**: ${\textsf{\color{orange}location of action}}$\
 **Description**: Sets the stage for where or how an action takes place.\
 **Examples**:
@@ -80,9 +76,8 @@ ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 > 
 > 
 
-### と
 ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
-
+### と
 **Function**: ${\textsf{\color{orange}"and"}}$\
 **Description**: Connects nouns that go together.\
 **Examples**:
@@ -107,9 +102,8 @@ ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 > 
 > 
 
-### に
 ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
-
+### に
 **Function**: ${\textsf{\color{orange}target or destination}}$\
 **Description**: Points to where something is going, either physically or conceptually.\
 **Examples**:
@@ -123,7 +117,7 @@ ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 > (I) got up at 7am.
 
 > <ruby>私<rt>わたし</rt></ruby>は<ruby>二<rt>は</rt></ruby><ruby>十<rt>た</rt></ruby><ruby>歳<rt>ち</rt></ruby>の<ruby>時<rt>とき</rt></ruby>に<ruby>結婚<rt>けっこん</rt></ruby>した。\
-> I got married at age twenty.
+> [I] got married at age twenty.
 
 **Function**: ${\textsf{\color{orange}location of existence}}$\
 **Description**: Used with verbs like ある (aru) and いる (iru) to indicate where something exists or is located.\
@@ -143,9 +137,8 @@ ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 > 
 > 
 
-### の
 ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
-
+### の
 **Function**: ${\textsf{\color{orange}possessive}}$\
 **Description**: Shows ownership or connects related concepts.\
 **Examples**:
@@ -170,54 +163,48 @@ ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 > 
 > 
 
-### は
 ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
-
+### は
 **Function**: ${\textsf{\color{orange}topic}}$\
 **Description**: Highlights what the sentence is about [prior established context].\
 **Examples**:
 > この<ruby>本<rt>ほん</rt></ruby>は<ruby>難<rt>むずか</rt></ruby>しい。\
 > [This book] (it) is difficult.
 
-### へ
 ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
-
+### へ
 **Function**: ${\textsf{\color{orange}direction}}$\
 **Description**: Shows the direction of movement, often interchangeable with に but more formal.\
 **Examples**:
 > 
 > 
 
-### まで
 ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
-
+### まで
 **Function**: ${\textsf{\color{orange}"until"}}$\
 **Description**: Temporal or spacial limit.\
 **Examples**:
 > 
 > 
 
-### も
 ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
-
+### も
 **Function**: ${\textsf{\color{orange}"also" or "even"}}$\
 **Description**: Adds items to a list or emphasizes unexpected inclusions.\
 **Examples**:
 > 
 > 
 
-### や
 ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
-
+### や
 **Function**: ${\textsf{\color{orange}"and"}}$\
 **Description**: Connects nouns that go together. Gives examples from a larger set of items.\
 **Examples**:
 > 
 > 
 
-### を
 ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
-
+### を
 **Function**: ${\textsf{\color{orange}direct object}}$\
 **Description**: Indicates what is receiving the action of the verb.\
 **Examples**:
