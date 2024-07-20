@@ -3,42 +3,219 @@ A curated collection of Japanese grammar notes that may prove helpful.
 
 **Table of Contents**
 - [Japanese Grammar Notes](#japanese-grammar-notes)
-  - [Particles](#particles)
+  - [Fundamental Particles](#fundamental-particles)
+    - [だけ](#だけ)
+    - [で](#で)
+    - [へ](#へ)
+    - [が](#が)
+    - [から](#から)
+    - [まで](#まで)
+    - [も](#も)
+    - [に](#に)
+    - [の](#の)
+    - [を](#を)
+    - [と](#と)
+    - [は](#は)
+    - [や](#や)
   - [Conjunctions](#conjunctions)
     - [Coordinate Conjunctions](#coordinate-conjunctions)
     - [Subordinate Conjunctions](#subordinate-conjunctions)
 
-## Particles
+## Fundamental Particles
 
-| Particle | Marker Type           | Usage                                                                                            |
-| :------- | :-------------------- | :----------------------------------------------------------------------------------------------- |
-| は       | Topic                 | Highlights what the sentence is about (context).                                                 |
-| が       | Subject               | Identifies who or what is doing the action or being described.                                   |
-|          | Object                | Used with certain predicates (like すき, ほしい, できる).                                        |
-|          | "But"                 | Can connect contrasting clauses.                                                                 |
-| を       | Direct object         | Indicates what is receiving the action of the verb.                                              |
-|          | Space traversed       | Indicates movement through or along a space.                                                     |
-| に       | Target or destination | Points to where something is going, either physically or conceptually.                           |
-|          | Time indicator        | Specifies when an action occurs.                                                                 |
-|          | Existence             | Used with verbs like ある (aru) and いる (iru) to indicate where something exists or is located. |
-|          | Indirect object       | Indicates the recipient of an action.                                                            |
-|          | Purpose               | Shows the reason for an action.                                                                  |
-| や       | "And"                 | Connects nouns that go together (and). Gives examples from a larger set of items.                |
-| と       | "And"                 | Connects nouns that go together (and).                                                           |
-|          | Quotes or thoughts    | Introduces quoted speech/thoughts.                                                               |
-|          | Cause and effect      | Separates cause and effect.                                                                      |
-|          | Sequential lists      | Used for listing immediate successive events.                                                    |
-| で       | Stage setting         | Sets the stage for where or how an action takes place.                                           |
-|          | Means or method       | Indicates how an action is performed.                                                            |
-|          | Quantity or extent    | Used to specify amounts in certain contexts.                                                     |
-| も       | "Also" or "even"      | Adds items to a list or emphasizes unexpected inclusions.                                        |
-| か       | Question              | Turns statements into questions or indicates uncertainty.                                        |
-|          | "Or"                  | Connects nouns that go together (or).                                                            |
-| へ       | Direction             | Shows the direction of movement, often interchangeable with に but more formal.                  |
-| の       | Possessive            | Shows ownership or connects related concepts.                                                    |
-|          | Nominalizer           | Turns phrases into noun clauses.                                                                 |
-|          | Explanatory           | Often used at the end of sentences to soften or explain.                                         |
-|          | Noun to adjective     | Converts a noun into an adjective.                                                               |
+### だけ
+---
+**Function**: ...\
+**Description**: ...\
+**Examples**:
+- 。。。\
+  ...
+
+### で
+---
+**Function**: Location of action\
+**Description**: Sets the stage for where or how an action takes place.\
+**Examples**:
+- 。。。\
+  ...
+
+**Function**: Means or method\
+**Description**: Indicates how an action is performed.\
+**Examples**:
+- 。。。\
+  ...
+
+**Function**: Quantity or extent\
+**Description**: Used to specify amounts in certain contexts.\
+**Examples**:
+- 。。。\
+  ...
+
+### へ
+---
+**Function**: Direction\
+**Description**: Shows the direction of movement, often interchangeable with に but more formal.\
+**Examples**:
+- 。。。\
+  ...
+
+### が
+---
+**Function**: Subject\
+**Description**: Identifies who or what is doing the action or being described.\
+**Examples**:
+- 。。。\
+  ...
+
+**Function**: Object\
+**Description**: Used with certain predicates (like すき, ほしい, できる).\
+**Examples**:
+- 。。。\
+  ...
+
+**Function**: "But"\
+**Description**: Can connect contrasting clauses.\
+**Examples**:
+- 。。。\
+  ...
+
+### から
+---
+**Function**: ...\
+**Description**: ...\
+**Examples**:
+- 。。。\
+  ...
+
+### まで
+---
+**Function**: ...\
+**Description**: ...\
+**Examples**:
+- 。。。\
+  ...
+
+### も
+---
+**Function**: "Also" or "even"\
+**Description**: Adds items to a list or emphasizes unexpected inclusions.\
+**Examples**:
+- 。。。\
+  ...
+
+### に
+---
+**Function**: Target or destination\
+**Description**: Points to where something is going, either physically or conceptually.\
+**Examples**:
+- 。。。\
+  ...
+
+**Function**: Specific Time\
+**Description**: Marks a specific point in time (day of week, time, year, month, etc.).\
+**Examples**:
+- <ruby>七<rt>しち</rt></ruby><ruby>時<rt>じ</rt></ruby>に<ruby>起<rt>お</rt></ruby>きた。\
+  (I) got up at 7am.
+
+**Function**: Location of existence\
+**Description**: Used with verbs like ある (aru) and いる (iru) to indicate where something exists or is located.\
+**Examples**:
+- 。。。\
+  ...
+
+**Function**: Indirect Object\
+**Description**: Indicates the recipient of an action.\
+**Examples**:
+- 。。。\
+  ...
+
+**Function**: Purpose\
+**Description**: Shows the reason for an action.\
+**Examples**:
+- 。。。\
+  ...
+
+### の
+---
+**Function**: Possessive\
+**Description**: Shows ownership or connects related concepts.\
+**Examples**:
+- 。。。\
+  ...
+
+**Function**: Nominalizer\
+**Description**: Turns phrases into noun clauses.\
+**Examples**:
+- 。。。\
+  ...
+
+**Function**: Explanatory\
+**Description**: Often used at the end of sentences to soften or explain.\
+**Examples**:
+- 。。。\
+  ...
+
+**Function**: Noun to adjective\
+**Description**: Converts a noun into an adjective.\
+**Examples**:
+- 。。。\
+  ...
+
+### を
+---
+**Function**: Direct object\
+**Description**: Indicates what is receiving the action of the verb.\
+**Examples**:
+- 。。。\
+  ...
+
+**Function**: Space Traversed\
+**Description**: Indicates movement through or along a space.\
+**Examples**:
+- 。。。\
+  ...
+
+### と
+---
+**Function**: "And"\
+**Description**: Connects nouns that go together.\
+**Examples**:
+- 。。。\
+  ...
+
+**Function**: Quotes or thoughts\
+**Description**: Introduces quoted speech/thoughts.\
+**Examples**:
+- 。。。\
+  ...
+
+**Function**: Cause and effect\
+**Description**: Separates cause and effect.\
+**Examples**:
+- 。。。\
+  ...
+
+**Function**: Sequential lists\
+**Description**: Used for listing immediate successive events.\
+**Examples**:
+- 。。。\
+  ...
+
+### は
+---
+**Function**: Topic\
+**Description**: Highlights what the sentence is about [prior established context].\
+**Examples**:
+- この<ruby>本<rt>ほん</rt></ruby>は<ruby>難<rt>むずか</rt></ruby>しい。\
+  [This book] (it) is difficult.
+
+### や
+---
+**Function**: "And"\
+**Description**: Connects nouns that go together. Gives examples from a larger set of items.\
+**Examples**:
+- 。。。\
+  ...
 
 ## Conjunctions
 
