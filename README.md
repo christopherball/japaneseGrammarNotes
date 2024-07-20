@@ -3,6 +3,8 @@ A curated collection of Japanese grammar notes that may prove helpful.
 
 **Table of Contents**
 - [Japanese Grammar Notes](#japanese-grammar-notes)
+  - [Introductory Notes](#introductory-notes)
+    - [Example Sentences](#example-sentences)
   - [Fundamental Particles](#fundamental-particles)
     - [が](#が)
     - [から](#から)
@@ -18,9 +20,15 @@ A curated collection of Japanese grammar notes that may prove helpful.
     - [や](#や)
     - [を](#を)
 
+## Introductory Notes
+
+### Example Sentences
+
+Since context is king in Japanese, for English translations, explicitly provided context from Japanese sentences will be surrounded by `[...]`.  On the other hand, implicitly assumed context will be surrounded by `(...)` to disambiguate.
+
 ## Fundamental Particles
 
-${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
+${\textsf{\color{grey}---------------------------------------------------}}$
 ### が
 **Function**: ${\textsf{\color{orange}subject emphasizer}}$\
 **Description**: Identifies who or what is doing the action or being described.\
@@ -40,7 +48,7 @@ ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 > 
 > 
 
-${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
+${\textsf{\color{grey}---------------------------------------------------}}$
 ### から
 **Function**: ${\textsf{\color{orange}"from", a reason or cause}}$\
 **Description**: After nouns, typically translates to "from", whereas after verbs and adjectives, indicates a reason or cause.\
@@ -48,7 +56,7 @@ ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 > 
 > 
 
-${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
+${\textsf{\color{grey}---------------------------------------------------}}$
 ### だけ
 **Function**: ${\textsf{\color{orange}"only" or "just"}}$\
 **Description**: Indicates a limit imposed upon something.\
@@ -56,7 +64,7 @@ ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 > 
 > 
 
-${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
+${\textsf{\color{grey}---------------------------------------------------}}$
 ### で
 **Function**: ${\textsf{\color{orange}location of action}}$\
 **Description**: Sets the stage for where or how an action takes place.\
@@ -76,7 +84,7 @@ ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 > 
 > 
 
-${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
+${\textsf{\color{grey}---------------------------------------------------}}$
 ### と
 **Function**: ${\textsf{\color{orange}"and"}}$\
 **Description**: Connects nouns that go together.\
@@ -102,7 +110,7 @@ ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 > 
 > 
 
-${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
+${\textsf{\color{grey}---------------------------------------------------}}$
 ### に
 **Function**: ${\textsf{\color{orange}target or destination}}$\
 **Description**: Points to where something is going, either physically or conceptually.\
@@ -137,7 +145,7 @@ ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 > 
 > 
 
-${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
+${\textsf{\color{grey}---------------------------------------------------}}$
 ### の
 **Function**: ${\textsf{\color{orange}possessive}}$\
 **Description**: Shows ownership or connects related concepts.\
@@ -163,15 +171,15 @@ ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 > 
 > 
 
-${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
+${\textsf{\color{grey}---------------------------------------------------}}$
 ### は
 **Function**: ${\textsf{\color{orange}topic}}$\
 **Description**: Highlights what the sentence is about [prior established context].\
 **Examples**:
 > この<ruby>本<rt>ほん</rt></ruby>は<ruby>難<rt>むずか</rt></ruby>しい。\
-> [This book] (it) is difficult.
+> [This book] is difficult.
 
-${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
+${\textsf{\color{grey}---------------------------------------------------}}$
 ### へ
 **Function**: ${\textsf{\color{orange}direction}}$\
 **Description**: Shows the direction of movement, often interchangeable with に but more formal.\
@@ -179,7 +187,7 @@ ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 > 
 > 
 
-${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
+${\textsf{\color{grey}---------------------------------------------------}}$
 ### まで
 **Function**: ${\textsf{\color{orange}"until"}}$\
 **Description**: Temporal or spacial limit.\
@@ -187,7 +195,7 @@ ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 > 
 > 
 
-${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
+${\textsf{\color{grey}---------------------------------------------------}}$
 ### も
 **Function**: ${\textsf{\color{orange}"also" or "even"}}$\
 **Description**: Adds items to a list or emphasizes unexpected inclusions.\
@@ -195,7 +203,7 @@ ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 > 
 > 
 
-${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
+${\textsf{\color{grey}---------------------------------------------------}}$
 ### や
 **Function**: ${\textsf{\color{orange}"and"}}$\
 **Description**: Connects nouns that go together. Gives examples from a larger set of items.\
@@ -203,7 +211,7 @@ ${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 > 
 > 
 
-${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
+${\textsf{\color{grey}---------------------------------------------------}}$
 ### を
 **Function**: ${\textsf{\color{orange}direct object}}$\
 **Description**: Indicates what is receiving the action of the verb.\
