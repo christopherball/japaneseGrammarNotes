@@ -17,14 +17,11 @@ A curated collection of Japanese grammar notes that may prove helpful.
     - [も](#も)
     - [や](#や)
     - [を](#を)
-  - [Conjunctions](#conjunctions)
-    - [Coordinate Conjunctions](#coordinate-conjunctions)
-    - [Subordinate Conjunctions](#subordinate-conjunctions)
 
 ## Fundamental Particles
 
 ### が
-${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}$
+${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 
 **Function**: ${\textsf{\color{orange}Subject}}$\
 **Description**: Identifies who or what is doing the action or being described.\
@@ -45,7 +42,7 @@ ${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}
   ...
 
 ### から
-${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}$
+${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 
 **Function**: ${\textsf{\color{orange}...}}$\
 **Description**: ...\
@@ -54,7 +51,7 @@ ${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}
   ...
 
 ### だけ
-${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}$
+${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 
 **Function**: ${\textsf{\color{orange}Quantity or extent}}$\...\
 **Description**: ...\
@@ -63,7 +60,7 @@ ${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}
   ...
 
 ### で
-${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}$
+${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 
 **Function**: ${\textsf{\color{orange}Location of action}}$\
 **Description**: Sets the stage for where or how an action takes place.\
@@ -84,7 +81,7 @@ ${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}
   ...
 
 ### と
-${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}$
+${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 
 **Function**: ${\textsf{\color{orange}"And"}}$\
 **Description**: Connects nouns that go together.\
@@ -111,7 +108,7 @@ ${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}
   ...
 
 ### に
-${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}$
+${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 
 **Function**: ${\textsf{\color{orange}Target or destination}}$\
 **Description**: Points to where something is going, either physically or conceptually.\
@@ -122,8 +119,11 @@ ${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}
 **Function**: ${\textsf{\color{orange}Specific Time}}$\
 **Description**: Marks a specific point in time (day of week, time, year, month, etc.).\
 **Examples**:
-- <ruby>七<rt>しち</rt></ruby><ruby>時<rt>じ</rt></ruby>に<ruby>起<rt>お</rt></ruby>きた。\
-  (I) got up at 7am.
+> <ruby>七<rt>しち</rt></ruby><ruby>時<rt>じ</rt></ruby>に<ruby>起<rt>お</rt></ruby>きた。\
+> (I) got up at 7am.
+
+> <ruby>私<rt>わたし</rt></ruby>は<ruby>二<rt>は</rt></ruby><ruby>十<rt>た</rt></ruby><ruby>歳<rt>ち</rt></ruby>の<ruby>時<rt>とき</rt></ruby>に<ruby>結婚<rt>けっこん</rt></ruby>した。\
+> I got married at age twenty.
 
 **Function**: ${\textsf{\color{orange}Location of existence}}$\
 **Description**: Used with verbs like ある (aru) and いる (iru) to indicate where something exists or is located.\
@@ -144,7 +144,7 @@ ${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}
   ...
 
 ### の
-${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}$
+${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 
 **Function**: ${\textsf{\color{orange}Possessive}}$\
 **Description**: Shows ownership or connects related concepts.\
@@ -171,7 +171,7 @@ ${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}
   ...
 
 ### は
-${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}$
+${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 
 **Function**: ${\textsf{\color{orange}Topic}}$\
 **Description**: Highlights what the sentence is about [prior established context].\
@@ -180,7 +180,7 @@ ${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}
   [This book] (it) is difficult.
 
 ### へ
-${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}$
+${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 
 **Function**: ${\textsf{\color{orange}Direction}}$\
 **Description**: Shows the direction of movement, often interchangeable with に but more formal.\
@@ -189,7 +189,7 @@ ${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}
   ...
 
 ### まで
-${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}$
+${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 
 **Function**: ${\textsf{\color{orange}...}}$\
 **Description**: ...\
@@ -198,7 +198,7 @@ ${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}
   ...
 
 ### も
-${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}$
+${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 
 **Function**: ${\textsf{\color{orange}"Also" or "even"}}$\
 **Description**: Adds items to a list or emphasizes unexpected inclusions.\
@@ -207,7 +207,7 @@ ${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}
   ...
 
 ### や
-${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}$
+${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 
 **Function**: ${\textsf{\color{orange}"And"}}$\
 **Description**: Connects nouns that go together. Gives examples from a larger set of items.\
@@ -216,7 +216,7 @@ ${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}
   ...
 
 ### を
-${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}$
+${\textsf{\color{grey}↓ ----------------------------------------------- ↓}}$
 
 **Function**: ${\textsf{\color{orange}Direct object}}$\
 **Description**: Indicates what is receiving the action of the verb.\
@@ -229,85 +229,3 @@ ${\textsf{\color{lightgreen}||||||||||||||||||||||||||||||||||||||||||||||||||}}
 **Examples**:
 - 。。。\
   ...
-
-## Conjunctions
-
-### Coordinate Conjunctions
-
-Used to connect two independent sentences together.
-
-| Category               | Conjunction                                                        |
-| :--------------------- | :----------------------------------------------------------------- |
-| Cause & Effect /       | かく(し)て                                                         |
-| Reason & Result /      | こうして                                                           |
-| Situation & Result     | したがって                                                         |
-|                        | すると                                                             |
-|                        | そこで                                                             |
-|                        | その<ruby>結果<rt>けっか</rt></ruby>                               |
-|                        | そのため(に)                                                       |
-|                        | それで                                                             |
-|                        | それ<ruby>故<rt>ゆえ</rt></ruby>(に)                               |
-|                        | だから                                                             |
-|                        | ですから                                                           |
-| But                    | (だ)けど                                                           |
-|                        | けれども                                                           |
-|                        | しかし                                                             |
-|                        | そのくせ                                                           |
-|                        | それでも                                                           |
-|                        | それなのに                                                         |
-|                        | それにしては                                                       |
-|                        | それにしても                                                       |
-|                        | だが                                                               |
-|                        | だからと<ruby>言<rt>い</rt></ruby>って                             |
-|                        | ただ                                                               |
-|                        | ただし                                                             |
-|                        | ですが                                                             |
-|                        | ですけ(れ)ども                                                     |
-|                        | でも                                                               |
-|                        | ところが                                                           |
-|                        | とは<ruby>言<rt>い</rt></ruby>うものの                             |
-|                        | とは<ruby>言<rt>い</rt></ruby>え                                   |
-|                        | とは<ruby>言<rt>い</rt></ruby>っても                               |
-|                        | (それ)にもかかわらず                                               |
-|                        | もっとも                                                           |
-| And                    | おまけに                                                           |
-|                        | しかも                                                             |
-|                        | そ(う)して                                                         |
-|                        | その<ruby>上<rt>うえ</rt></ruby>(に)                               |
-|                        | それから                                                           |
-|                        | それと                                                             |
-|                        | それに                                                             |
-|                        | そればかりか                                                       |
-|                        | そればかりでなく                                                   |
-|                        | また                                                               |
-| Or                     | あるいは                                                           |
-|                        | それとも                                                           |
-|                        | または                                                             |
-| To change the subject  | さて                                                               |
-|                        | それはそうと                                                       |
-|                        | ときに                                                             |
-|                        | ところで                                                           |
-|                        | <ruby>話<rt>はなし</rt></ruby><ruby>変<rt>か</rt></ruby>わって     |
-|                        | <ruby>話<rt>はなし</rt></ruby>は<ruby>変<rt>か</rt></ruby>わります |
-| Paraphrasing           | <ruby>言<rt>い</rt></ruby>い<ruby>換<rt>か</rt></ruby>えると       |
-|                        | <ruby>言<rt>い</rt></ruby>い<ruby>換<rt>か</rt></ruby>えれば       |
-|                        | <ruby>結<rt>けっ</rt></ruby><ruby>局<rt>きょく</rt></ruby>         |
-|                        | つまり                                                             |
-|                        | <ruby>要<rt>よう</rt></ruby>するに                                 |
-| For example            | <ruby>例<rt>たと</rt></ruby>えば                                   |
-|                        | <ruby>例<rt>れい</rt></ruby>を<ruby>挙<rt>あ</rt></ruby>げると     |
-| A reason for something | と<ruby>言<rt>い</rt></ruby>いますのは                             |
-|                        | と<ruby>言<rt>い</rt></ruby>うのは                                 |
-|                        | なぜかって<ruby>言<rt>い</rt></ruby>うと                           |
-|                        | なぜかと<ruby>言<rt>い</rt></ruby>うと                             |
-|                        | なぜかと<ruby>言<rt>い</rt></ruby>えば                             |
-|                        | なぜなら(ば)                                                       |
-| Contrast               | <ruby>一方<rt>いっぽう</rt></ruby>                                 |
-|                        | <ruby>他方<rt>たほう</rt></ruby>                                   |
-|                        | それに<ruby>対<rt>たい</rt></ruby>して                             |
-
-### Subordinate Conjunctions
-
-Used to connect two sentence clauses together, the subordinate clause followed by the main clause.
-
-...
