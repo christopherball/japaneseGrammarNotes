@@ -68,16 +68,20 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### Adjective → Noun
-- ${\textsf{\color{orange}い-Adjective-Stem + さ = Noun}}$ (results in an objective, measurable quality)
+- ${\textsf{\color{orange}い-Adjective-Stem + さ = Noun}}$
+  - Results in an objective, measurable quality.
   - > <ruby>高<rt>たか</rt></ruby>い<ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>高<rt>たか</rt></ruby><ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>高<rt>たか</rt></ruby>さ\
   tall / expensive → ... → tallness / expensiveness
-- ${\textsf{\color{orange}な-Adjective-Stem + さ = Noun}}$ (results in an objective, measurable quality)
+- ${\textsf{\color{orange}な-Adjective-Stem + さ = Noun}}$
+  - Results in an objective, measurable quality.
   - > <ruby>便利<rt>べんり</rt></ruby>な<ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>便利<rt>べんり</rt></ruby><ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>便利<rt>べんり</rt></ruby>さ\
     convenient → ... → convenience
-- ${\textsf{\color{orange}い-Adjective-Stem + み = Noun}}$ (results in a subjective quality)
+- ${\textsf{\color{orange}い-Adjective-Stem + み = Noun}}$
+  - Results in a subjective quality.
   - > <ruby>面白<rt>おもしろ</rt></ruby>い<ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>面白<rt>おもしろ</rt></ruby><ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>面白<rt>おもしろ</rt></ruby>み\
     interesting → ... → interest
-- ${\textsf{\color{orange}な-Adjective-Stem + み = Noun}}$ (results in a subjective quality)
+- ${\textsf{\color{orange}な-Adjective-Stem + み = Noun}}$
+  - Results in a subjective quality.
   - Note: only a small number of な-adjectives support this.
   - > <ruby>新鮮<rt>しんせん</rt></ruby>な<ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>新鮮<rt>しんせん</rt></ruby><ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>新鮮<rt>しんせん</rt></ruby>み\
     fresh  → ... → freshness
