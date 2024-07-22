@@ -100,7 +100,7 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 > 
 > 
 
-**Function**: "${\textsf{\color{orange}but}}$"\
+**Function**: ${\textsf{\color{orange}"but"}}$\
 **Description**: A conjunction that connects contrasting clauses.\
 **Examples**:
 > 
@@ -108,7 +108,7 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### から
-**Function**: "${\textsf{\color{orange}from}}$", ${\textsf{\color{orange} a reason or cause}}$\
+**Function**: ${\textsf{\color{orange}"from"}}$, ${\textsf{\color{orange} a reason or cause}}$\
 **Description**: After nouns, typically translates to "from", whereas after verbs and adjectives, indicates a reason or cause.\
 **Examples**:
 > 
@@ -116,7 +116,7 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### だけ
-**Function**: "${\textsf{\color{orange}only}}$" or "${\textsf{\color{orange}just}}$"\
+**Function**: ${\textsf{\color{orange}"only"}}$ or ${\textsf{\color{orange}"just"}}$\
 **Description**: Indicates a limit imposed upon something.\
 **Examples**:
 > 
@@ -144,7 +144,7 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### と
-**Function**: "${\textsf{\color{orange}and}}$"\
+**Function**: ${\textsf{\color{orange}"and"}}$\
 **Description**: Connects nouns that go together.\
 **Examples**:
 > 
@@ -247,7 +247,7 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### まで
-**Function**: "${\textsf{\color{orange}until}}$"\
+**Function**: ${\textsf{\color{orange}"until"}}$\
 **Description**: Temporal or spacial limit.\
 **Examples**:
 > 
@@ -255,7 +255,7 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### も
-**Function**: "${\textsf{\color{orange}also}}$" or "${\textsf{\color{orange}even}}$"\
+**Function**: ${\textsf{\color{orange}"also"}}$ or ${\textsf{\color{orange}"even"}}$\
 **Description**: Adds items to a list or emphasizes unexpected inclusions.\
 **Examples**:
 > 
@@ -263,7 +263,7 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### や
-**Function**: "${\textsf{\color{orange}and}}$"\
+**Function**: ${\textsf{\color{orange}"and"}}$\
 **Description**: Connects nouns that go together. Gives examples from a larger set of items.\
 **Examples**:
 > 
@@ -292,7 +292,7 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 ### Fundamentals
 
 #### 〜たら
-**Description**: Broadly considered a conditional form.  For contexts expressing time sequences, 〜たら is interpretted as either "${\textsf{\color{orange}when}}$" or "${\textsf{\color{orange}after}}$".  For other contexts expressing more generic conditional situations, 〜たら is interpretted as "${\textsf{\color{orange}if}}$".
+**Description**: Broadly considered a conditional form.  For contexts expressing time sequences, 〜たら is interpretted as either ${\textsf{\color{orange}"when"}}$ or ${\textsf{\color{orange}"after"}}$.  For other contexts expressing more generic conditional situations, 〜たら is interpretted as ${\textsf{\color{orange}"if"}}$.
 
 **Grammar Equations**:
 - V-た + ら
