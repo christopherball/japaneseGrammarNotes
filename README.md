@@ -5,20 +5,31 @@ A curated collection of Japanese grammar notes that may prove helpful.
 - [Japanese Grammar Notes](#japanese-grammar-notes)
   - [Introductory Notes](#introductory-notes)
     - [Example Sentences](#example-sentences)
-  - [Fundamental Particles](#fundamental-particles)
-    - [が](#が)
-    - [から](#から)
-    - [だけ](#だけ)
-    - [で](#で)
-    - [と](#と)
-    - [に](#に)
-    - [の](#の)
-    - [は](#は)
-    - [へ](#へ)
-    - [まで](#まで)
-    - [も](#も)
-    - [や](#や)
-    - [を](#を)
+  - [Parts of Speech](#parts-of-speech)
+    - [Fundamentals](#fundamentals)
+    - [Conversions](#conversions)
+      - [Noun → Adjective](#noun--adjective)
+      - [Adjective → Adverb](#adjective--adverb)
+      - [Adjective → Noun](#adjective--noun)
+  - [Particles](#particles)
+    - [Fundamentals](#fundamentals-1)
+      - [が](#が)
+      - [から](#から)
+      - [だけ](#だけ)
+      - [で](#で)
+      - [と](#と)
+      - [に](#に)
+      - [の](#の)
+      - [は](#は)
+      - [へ](#へ)
+      - [まで](#まで)
+      - [も](#も)
+      - [や](#や)
+      - [を](#を)
+  - [Copula Conjugations](#copula-conjugations)
+  - [Verb Forms](#verb-forms)
+    - [Fundamentals](#fundamentals-2)
+      - [〜たら](#たら)
 
 ## Introductory Notes
 
@@ -26,46 +37,93 @@ A curated collection of Japanese grammar notes that may prove helpful.
 
 Since context is king in Japanese, for English translations, explicitly provided context from Japanese sentences will be surrounded by `[...]`.  On the other hand, implicitly assumed context will be surrounded by `(...)` to disambiguate.
 
-## Fundamental Particles
+## Parts of Speech
+
+### Fundamentals
+
+### Conversions
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
-### が
+#### Noun → Adjective
+- ${\textsf{\color{orange}Noun + 的 = な-Adjective}}$
+  - Only works for a *subset* of pure nouns (not な-adjectives). Is more restrictive and often applies to more abstract concepts.
+  - > <ruby>文化<rt>ぶんか</rt></ruby><ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>文化<rt>ぶんか</rt></ruby><ruby>的<rt>てき</rt></ruby>\
+    culture → cultural
+  - > <ruby>歴史<rt>れきし</rt></ruby><ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>歴史<rt>れきし</rt></ruby><ruby>的<rt>てき</rt></ruby>\
+    history → historical
+  - > <ruby>科学<rt>かがく</rt></ruby><ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>科学<rt>かがく</rt></ruby><ruby>的<rt>てき</rt></ruby>\
+    science → scientific
+
+- ${\textsf{\color{orange}Noun + の = Adjective}}$
+  - Technically becomes an 'adjectival noun / phrase' (or possessive of course), but conceptually the same as an adjective.
+  - Does not work with な-adjectives (use な instead).
+  - > <ruby>車<rt>くるま</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>\
+    car books (a book about cars)
+  - > <ruby>木<rt>き</rt></ruby>の<ruby>椅子<rt>いす</rt></ruby>\
+    wooden chairs (a chair made of wood)
+
+${\textsf{\color{grey}---------------------------------------------------}}$
+#### Adjective → Adverb
+- ${\textsf{\color{orange}な-Adjective + に = Adverb}}$
+
+${\textsf{\color{grey}---------------------------------------------------}}$
+#### Adjective → Noun
+- ${\textsf{\color{orange}い-Adjective-Stem + さ = Noun}}$ (results in an objective, measurable quality)
+  - > <ruby>高<rt>たか</rt></ruby>い<ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>高<rt>たか</rt></ruby><ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>高<rt>たか</rt></ruby>さ\
+  tall / expensive → ... → tallness / expensiveness
+- ${\textsf{\color{orange}な-Adjective-Stem + さ = Noun}}$ (results in an objective, measurable quality)
+  - > <ruby>便利<rt>べんり</rt></ruby>な<ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>便利<rt>べんり</rt></ruby><ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>便利<rt>べんり</rt></ruby>さ\
+    convenient → ... → convenience
+- ${\textsf{\color{orange}い-Adjective-Stem + み = Noun}}$ (results in a subjective quality)
+  - > <ruby>面白<rt>おもしろ</rt></ruby>い<ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>面白<rt>おもしろ</rt></ruby><ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>面白<rt>おもしろ</rt></ruby>み\
+    interesting → ... → interest
+- ${\textsf{\color{orange}な-Adjective-Stem + み = Noun}}$ (results in a subjective quality)
+  - Note: only a small number of な-adjectives support this.
+  - > <ruby>新鮮<rt>しんせん</rt></ruby>な<ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>新鮮<rt>しんせん</rt></ruby><ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>新鮮<rt>しんせん</rt></ruby>み\
+    fresh  → ... → freshness
+
+## Particles
+
+### Fundamentals
+
+${\textsf{\color{grey}---------------------------------------------------}}$
+#### が
 **Function**: ${\textsf{\color{orange}subject emphasizer}}$\
 **Description**: Identifies who or what is doing the action or being described.\
 **Examples**:
 > 
 > 
 
-**Function**: ${\textsf{\color{orange}desire, need, ability, or opinion}}$\
+**Function**: ${\textsf{\color{orange}desire}}$, ${\textsf{\color{orange}need}}$, ${\textsf{\color{orange}ability}}$, ${\textsf{\color{orange}or opinion}}$\
 **Description**: Used with certain predicates (like すき, ほしい, できる) to express desire, need, ability or opinion.\
 **Examples**:
 > 
 > 
 
-**Function**: ${\textsf{\color{orange}"but" conjunction}}$\
-**Description**: Can connect contrasting clauses.\
+**Function**: "${\textsf{\color{orange}but}}$"\
+**Description**: A conjunction that connects contrasting clauses.\
 **Examples**:
 > 
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
-### から
-**Function**: ${\textsf{\color{orange}"from", a reason or cause}}$\
+#### から
+**Function**: "${\textsf{\color{orange}from}}$", ${\textsf{\color{orange} a reason or cause}}$\
 **Description**: After nouns, typically translates to "from", whereas after verbs and adjectives, indicates a reason or cause.\
 **Examples**:
 > 
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
-### だけ
-**Function**: ${\textsf{\color{orange}"only" or "just"}}$\
+#### だけ
+**Function**: "${\textsf{\color{orange}only}}$" or "${\textsf{\color{orange}just}}$"\
 **Description**: Indicates a limit imposed upon something.\
 **Examples**:
 > 
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
-### で
+#### で
 **Function**: ${\textsf{\color{orange}location of action}}$\
 **Description**: Sets the stage for where or how an action takes place.\
 **Examples**:
@@ -85,8 +143,8 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
-### と
-**Function**: ${\textsf{\color{orange}"and"}}$\
+#### と
+**Function**: "${\textsf{\color{orange}and}}$"\
 **Description**: Connects nouns that go together.\
 **Examples**:
 > 
@@ -111,7 +169,7 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
-### に
+#### に
 **Function**: ${\textsf{\color{orange}target or destination}}$\
 **Description**: Points to where something is going, either physically or conceptually.\
 **Examples**:
@@ -146,7 +204,7 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
-### の
+#### の
 **Function**: ${\textsf{\color{orange}possessive}}$\
 **Description**: Shows ownership or connects related concepts.\
 **Examples**:
@@ -172,7 +230,7 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
-### は
+#### は
 **Function**: ${\textsf{\color{orange}topic}}$\
 **Description**: Highlights what the sentence is about [prior established context].\
 **Examples**:
@@ -180,7 +238,7 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 > [This book] is difficult.
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
-### へ
+#### へ
 **Function**: ${\textsf{\color{orange}direction}}$\
 **Description**: Shows the direction of movement, often interchangeable with に but more formal.\
 **Examples**:
@@ -188,31 +246,31 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
-### まで
-**Function**: ${\textsf{\color{orange}"until"}}$\
+#### まで
+**Function**: "${\textsf{\color{orange}until}}$"\
 **Description**: Temporal or spacial limit.\
 **Examples**:
 > 
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
-### も
-**Function**: ${\textsf{\color{orange}"also" or "even"}}$\
+#### も
+**Function**: "${\textsf{\color{orange}also}}$" or "${\textsf{\color{orange}even}}$"\
 **Description**: Adds items to a list or emphasizes unexpected inclusions.\
 **Examples**:
 > 
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
-### や
-**Function**: ${\textsf{\color{orange}"and"}}$\
+#### や
+**Function**: "${\textsf{\color{orange}and}}$"\
 **Description**: Connects nouns that go together. Gives examples from a larger set of items.\
 **Examples**:
 > 
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
-### を
+#### を
 **Function**: ${\textsf{\color{orange}direct object}}$\
 **Description**: Indicates what is receiving the action of the verb.\
 **Examples**:
@@ -224,3 +282,20 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 **Examples**:
 > 
 > 
+
+## Copula Conjugations
+
+...
+
+## Verb Forms
+
+### Fundamentals
+
+#### 〜たら
+**Description**: Broadly considered a conditional form.  For contexts expressing time sequences, 〜たら is interpretted as either "${\textsf{\color{orange}when}}$" or "${\textsf{\color{orange}after}}$".  For other contexts expressing more generic conditional situations, 〜たら is interpretted as "${\textsf{\color{orange}if}}$".
+
+**Grammar Equations**:
+- V-た + ら
+- い-adj-かった + ら
+- な-adj (stem) + だったら
+- noun + だったら
