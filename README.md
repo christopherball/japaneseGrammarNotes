@@ -11,6 +11,7 @@ A curated collection of Japanese grammar notes that may prove helpful.
       - [Noun → Adjective](#noun--adjective)
       - [Adjective → Adverb](#adjective--adverb)
       - [Adjective → Noun](#adjective--noun)
+      - [Verb → Noun](#verb--noun)
   - [Particles](#particles)
     - [Fundamentals](#fundamentals-1)
       - [が](#が)
@@ -46,7 +47,8 @@ Since context is king in Japanese, for English translations, explicitly provided
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### Noun → Adjective
 - ${\textsf{\color{orange}Noun + 的 = な-Adjective}}$
-  - Only works for a *subset* of pure nouns (not な-adjectives). Is more restrictive and often applies to more abstract concepts.
+  - ${\textsf{\color{yellow}Warning}}$: only a *subset* of all pure nouns support this approach.
+  - Usage is more restrictive and often applies to more abstract concepts.
   - > <ruby>文化<rt>ぶんか</rt></ruby><ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>文化<rt>ぶんか</rt></ruby><ruby>的<rt>てき</rt></ruby>\
     culture → cultural
   - > <ruby>歴史<rt>れきし</rt></ruby><ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>歴史<rt>れきし</rt></ruby><ruby>的<rt>てき</rt></ruby>\
@@ -55,16 +57,25 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
     science → scientific
 
 - ${\textsf{\color{orange}Noun + の = Adjective}}$
-  - Technically becomes an 'adjectival noun / phrase' (or possessive of course), but conceptually the same as an adjective.
-  - Does not work with な-adjectives (use な instead).
+  - Works for all pure nouns.
+  - Technically results in an 'adjectival noun / phrase' (assuming not the possessive use-case), but conceptually the same as an adjective.
   - > <ruby>車<rt>くるま</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>\
-    car books (a book about cars)
+    car book (a book about cars)
   - > <ruby>木<rt>き</rt></ruby>の<ruby>椅子<rt>いす</rt></ruby>\
-    wooden chairs (a chair made of wood)
+    wooden chair (a chair made of wood)
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### Adjective → Adverb
-- ${\textsf{\color{orange}な-Adjective + に = Adverb}}$
+- ${\textsf{\color{orange}い-Adjective-Stem + く = Adverb}}$
+  - > <ruby>私<rt>わたし</rt></ruby>は<ruby>京都<rt>きょうと</rt></ruby>に<ruby>長<rt>なが</rt></ruby>く<ruby>住<rt>す</rt></ruby>んでいました。\
+    I lived in Kyoto for a long time. (*longly* lived)
+  - > その<ruby>ラーメン<rt>らあめん</rt></ruby>を<ruby>早<rt>はや</rt></ruby>く<ruby>食<rt>た</rt></ruby>べました。\
+    I quickly ate that ramen.
+- ${\textsf{\color{orange}な-Adjective-Stem + に = Adverb}}$
+  - > もっと<ruby>効率<rt>こうりつ</rt></ruby><ruby>的<rt>てき</rt></ruby>に<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>勉強<rt>べんきょう</rt></ruby>したいです。\
+    I want to study Japanese more efficiently.
+  - > <ruby>図書館<rt>としょかん</rt></ruby>に<ruby>雑誌<rt>ざっし</rt></ruby>を<ruby>静<rt>しず</rt></ruby>かに<ruby>読<rt>よ</rt></ruby>んでいることがよくする。\
+    I often quietly read magazines in the library.
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### Adjective → Noun
@@ -82,9 +93,18 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
     interesting → ... → interest
 - ${\textsf{\color{orange}な-Adjective-Stem + み = Noun}}$
   - Results in a subjective quality.
-  - Note: only a small number of な-adjectives support this.
+  - ${\textsf{\color{yellow}Warning}}$: only a small number of な-adjectives support this approach.
   - > <ruby>新鮮<rt>しんせん</rt></ruby>な<ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>新鮮<rt>しんせん</rt></ruby><ruby> <rt></rt></ruby> → <ruby> <rt></rt></ruby><ruby>新鮮<rt>しんせん</rt></ruby>み\
     fresh  → ... → freshness
+
+${\textsf{\color{grey}---------------------------------------------------}}$
+#### Verb → Noun
+- ${\textsf{\color{orange}Verb-Plain + の = Noun}}$
+  - Technically results in a 'nominalized verb', but conceptually the same as a noun.
+- ${\textsf{\color{orange}Verb-Plain + こと = Noun}}$
+  - ...
+- ${\textsf{\color{orange}Verb-ます-Stem = Noun}}$
+  - ${\textsf{\color{yellow}Warning}}$: only a *subset* of all verbs support this approach.
 
 ## Particles
 
