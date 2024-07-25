@@ -27,6 +27,8 @@ A curated collection of Japanese grammar notes that may prove helpful.
       - [や](#や)
       - [を](#を)
   - [Copula Conjugations](#copula-conjugations)
+    - [Basic Conjugations](#basic-conjugations)
+    - [Written Form Conjugations](#written-form-conjugations)
   - [Verb Forms](#verb-forms)
     - [Fundamentals](#fundamentals-2)
       - [〜たら](#たら)
@@ -114,204 +116,198 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### が
-**Function**: ${\textsf{\color{limegreen}subject emphasizer}}$\
-**Description**: Identifies who or what is doing the action or being described.\
-**Examples**:
+**Function**: ${\textsf{\color{limegreen}Subject emphasizer}}$\
+**Description**: Identifies who or what is doing the action or being described.
 > 
 > 
 
-**Function**: ${\textsf{\color{limegreen}desire}}$, ${\textsf{\color{limegreen}need}}$, ${\textsf{\color{limegreen}ability}}$, ${\textsf{\color{limegreen}or opinion}}$\
-**Description**: Used with certain predicates (like すき, ほしい, できる) to express desire, need, ability or opinion.\
-**Examples**:
+**Function**: ${\textsf{\color{limegreen}Desire}}$, ${\textsf{\color{limegreen}need}}$, ${\textsf{\color{limegreen}ability}}$, ${\textsf{\color{limegreen}or opinion}}$\
+**Description**: Used with certain predicates (like すき, ほしい, できる) to express desire, need, ability or opinion.
 > 
 > 
 
 **Function**: ${\textsf{\color{limegreen}"but"}}$\
-**Description**: A conjunction that connects contrasting clauses.\
-**Examples**:
+**Description**: A conjunction that connects contrasting clauses.
 > 
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### から
 **Function**: ${\textsf{\color{limegreen}"from"}}$, ${\textsf{\color{limegreen} a reason or cause}}$\
-**Description**: After nouns, typically translates to "from", whereas after verbs and adjectives, indicates a reason or cause.\
-**Examples**:
+**Description**: After nouns, typically translates to "from", whereas after verbs and adjectives, indicates a reason or cause.
 > 
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### だけ
 **Function**: ${\textsf{\color{limegreen}"only"}}$ or ${\textsf{\color{limegreen}"just"}}$\
-**Description**: Indicates a limit imposed upon something.\
-**Examples**:
+**Description**: Indicates a limit imposed upon something.
 > 
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### で
-**Function**: ${\textsf{\color{limegreen}location of action}}$\
-**Description**: Sets the stage for where or how an action takes place.\
-**Examples**:
+**Function**: ${\textsf{\color{limegreen}Location of action}}$\
+**Description**: Sets the stage for where or how an action takes place.
 > 
 > 
 
-**Function**: ${\textsf{\color{limegreen}means or method}}$\
-**Description**: Indicates how an action is performed.\
-**Examples**:
+**Function**: ${\textsf{\color{limegreen}Means or method}}$\
+**Description**: Indicates how an action is performed.
 > 
 > 
 
-**Function**: ${\textsf{\color{limegreen}quantity or extent}}$\
-**Description**: Used to specify amounts in certain contexts.\
-**Examples**:
+**Function**: ${\textsf{\color{limegreen}Quantity or extent}}$\
+**Description**: Used to specify amounts in certain contexts.
 > 
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### と
 **Function**: ${\textsf{\color{limegreen}"and"}}$\
-**Description**: Connects nouns that go together.\
-**Examples**:
+**Description**: Connects nouns that go together.
 > 
 > 
 
-**Function**: ${\textsf{\color{limegreen}quotes or thoughts}}$\
-**Description**: Introduces quoted speech/thoughts.\
-**Examples**:
+**Function**: ${\textsf{\color{limegreen}Quotes or thoughts}}$\
+**Description**: Introduces quoted speech/thoughts.
 > 
 > 
 
-**Function**: ${\textsf{\color{limegreen}cause and effect}}$\
-**Description**: Separates cause and effect.\
-**Examples**:
+**Function**: ${\textsf{\color{limegreen}Cause and effect}}$\
+**Description**: Separates cause and effect.
 > 
 > 
 
-**Function**: ${\textsf{\color{limegreen}sequential lists}}$\
-**Description**: Used for listing immediate successive events.\
-**Examples**:
+**Function**: ${\textsf{\color{limegreen}Sequential lists}}$\
+**Description**: Used for listing immediate successive events.
 > 
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### に
-**Function**: ${\textsf{\color{limegreen}target or destination}}$\
-**Description**: Points to where something is going, either physically or conceptually.\
-**Examples**:
+**Function**: ${\textsf{\color{limegreen}Target or destination}}$\
+**Description**: Points to where something is going, either physically or conceptually.
 > 
 > 
 
-**Function**: ${\textsf{\color{limegreen}specific time}}$\
-**Description**: Marks a specific point in time (day of week, time, year, month, etc.).\
-**Examples**:
+**Function**: ${\textsf{\color{limegreen}Specific time}}$\
+**Description**: Marks a specific point in time (day of week, time, year, month, etc.).
 > <ruby>七<rt>しち</rt></ruby><ruby>時<rt>じ</rt></ruby>に<ruby>起<rt>お</rt></ruby>きた。\
 > (I) got up at 7am.
 
 > <ruby>私<rt>わたし</rt></ruby>は<ruby>二<rt>は</rt></ruby><ruby>十<rt>た</rt></ruby><ruby>歳<rt>ち</rt></ruby>の<ruby>時<rt>とき</rt></ruby>に<ruby>結婚<rt>けっこん</rt></ruby>した。\
 > I got married at age twenty.
 
-**Function**: ${\textsf{\color{limegreen}location of existence}}$\
-**Description**: Used with verbs like ある (aru) and いる (iru) to indicate where something exists or is located.\
-**Examples**:
+**Function**: ${\textsf{\color{limegreen}Location of existence}}$\
+**Description**: Used with verbs like ある (aru) and いる (iru) to indicate where something exists or is located.
 > 
 > 
 
-**Function**: ${\textsf{\color{limegreen}indirect object}}$\
-**Description**: Indicates the recipient of an action.\
-**Examples**:
+**Function**: ${\textsf{\color{limegreen}Indirect object}}$\
+**Description**: Indicates the recipient of an action.
 > 
 > 
 
-**Function**: ${\textsf{\color{limegreen}intention or purpose}}$\
-**Description**: Shows the reason for an action.\
-**Examples**:
+**Function**: ${\textsf{\color{limegreen}Intention or purpose}}$\
+**Description**: Shows the reason for an action.
 > 
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### の
-**Function**: ${\textsf{\color{limegreen}possessive}}$\
-**Description**: Shows ownership or connects related concepts.\
-**Examples**:
+**Function**: ${\textsf{\color{limegreen}Possessive}}$\
+**Description**: Shows ownership or connects related concepts.
 > 
 > 
 
-**Function**: ${\textsf{\color{limegreen}nominalizer}}$\
-**Description**: Turns phrases into noun clauses.\
-**Examples**:
+**Function**: ${\textsf{\color{limegreen}Nominalizer}}$\
+**Description**: Turns phrases into noun clauses.
 > 
 > 
 
-**Function**: ${\textsf{\color{limegreen}explanatory}}$\
-**Description**: Often used at the end of sentences to soften or explain.\
-**Examples**:
+**Function**: ${\textsf{\color{limegreen}Explanatory}}$\
+**Description**: Often used at the end of sentences to soften or explain.
 > 
 > 
 
-**Function**: ${\textsf{\color{limegreen}noun → adjective}}$\
-**Description**: Converts a noun into an adjective.\
-**Examples**:
-> 
-> 
+**Function**: ${\textsf{\color{limegreen}Noun → adjective}}$\
+**Description**: Converts a noun into an adjective. See [here](#noun--adjective).
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### は
-**Function**: ${\textsf{\color{limegreen}topic}}$\
-**Description**: Highlights what the sentence is about [prior established context].\
-**Examples**:
+**Function**: ${\textsf{\color{limegreen}Topic}}$\
+**Description**: Highlights what the sentence is about (establishes context).
 > この<ruby>本<rt>ほん</rt></ruby>は<ruby>難<rt>むずか</rt></ruby>しい。\
-> This book is difficult.
+> This book is difficult. (*this book* being the context for what will then be spoken about)
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### へ
-**Function**: ${\textsf{\color{limegreen}direction}}$\
-**Description**: Shows the direction of movement, often interchangeable with に but more formal.\
-**Examples**:
+**Function**: ${\textsf{\color{limegreen}Direction}}$\
+**Description**: Shows the direction of movement, often interchangeable with に but more formal.
 > 
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### まで
 **Function**: ${\textsf{\color{limegreen}"until"}}$\
-**Description**: Temporal or spacial limit.\
-**Examples**:
+**Description**: Temporal or spacial limit.
 > 
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### も
 **Function**: ${\textsf{\color{limegreen}"also"}}$ or ${\textsf{\color{limegreen}"even"}}$\
-**Description**: Adds items to a list or emphasizes unexpected inclusions.\
-**Examples**:
+**Description**: Adds items to a list or emphasizes unexpected inclusions.
 > 
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### や
 **Function**: ${\textsf{\color{limegreen}"and"}}$\
-**Description**: Connects nouns that go together. Gives examples from a larger set of items.\
-**Examples**:
+**Description**: Connects nouns that go together. Gives examples from a larger set of items.
 > 
 > 
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### を
-**Function**: ${\textsf{\color{limegreen}direct object}}$\
-**Description**: Indicates what is receiving the action of the verb.\
-**Examples**:
+**Function**: ${\textsf{\color{limegreen}Direct object}}$\
+**Description**: Indicates what is receiving the action of the verb.
 > 
 > 
 
-**Function**: ${\textsf{\color{limegreen}space traversed}}$\
-**Description**: Indicates movement through or along a space.\
-**Examples**:
+**Function**: ${\textsf{\color{limegreen}Space traversed}}$\
+**Description**: Indicates movement through or along a space.
 > 
 > 
 
 ## Copula Conjugations
 
-...
+### Basic Conjugations
+
+|               | Plain        | Polite               | Honorific              |
+| :------------ | :----------- | :------------------- | :--------------------- |
+| Non-Past      | だ           | です                 | でございます           |
+| Past          | だった       | でした               | でございました         |
+| Non-Past Neg. | ではない     | ではありません       | ではございません       |
+|               |              | ではないです         |                        |
+|               | じゃない     | じゃありません       |                        |
+|               |              | じゃないです         |                        |
+| Past Neg.     | ではなかった | ではありませんでした | ではございませんでした |
+|               | じゃなかった | じゃありませんでした |                        |
+| Volitional    | だろう       | でしょう             | でございましょう       |
+| Te-Form       | で           | でありまして         | でございまして         |
+| Conditional   | なら         | であれば             | であれば               |
+|               | ならば       |                      |                        |
+
+### Written Form Conjugations
+
+In writing, the following forms may also be used when the author is *explaining* something:
+
+|          | Plain    | Polite       |
+| :------- | :------- | :----------- |
+| Non-Past | である   | であります   |
+| Past     | であった | でありました |
 
 ## Verb Forms
 
