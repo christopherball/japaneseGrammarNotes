@@ -134,9 +134,12 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### から
 **Function**: ${\textsf{\color{limegreen}"from"}}$, ${\textsf{\color{limegreen} a reason or cause}}$\
-**Description**: After nouns, typically translates to "from", whereas after verbs and adjectives, indicates a reason or cause.
-> 
-> 
+**Description**: Marks a starting place, time or source of information. Can also mark a reason / cause.
+> <ruby>友達<rt>ともだち</rt></ruby>から<ruby>聞<rt>き</rt></ruby>きました。\
+  I heard it from a friend.
+  
+> <ruby>財布<rt>さいふ</rt></ruby>を<ruby>忘<rt>わす</rt></ruby>れたから<ruby>払<rt>はら</rt></ruby>えない。\
+  I forgot my wallet so I can't pay.
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### だけ
