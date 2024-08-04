@@ -32,6 +32,7 @@ A curated collection of Japanese grammar notes that may prove helpful.
   - [Verb Forms](#verb-forms)
     - [Fundamentals](#fundamentals-2)
       - [〜たら](#たら)
+      - [〜ている](#ている)
 
 ## Introductory Notes
 
@@ -330,10 +331,20 @@ In writing, the following forms may also be used when the author is *explaining*
 ### Fundamentals
 
 #### 〜たら
-**Description**: Broadly considered a conditional form.  For contexts expressing time sequences, 〜たら is interpretted as either ${\textsf{\color{limegreen}"when"}}$ or ${\textsf{\color{limegreen}"after"}}$.  For other contexts expressing more generic conditional situations, 〜たら is interpretted as ${\textsf{\color{limegreen}"if"}}$.
+**Description**: Broadly considered a conditional form.  For contexts expressing time sequences, 〜たら is interpretted as either ${\textsf{\color{limegreen}"when"}}$ or ${\textsf{\color{limegreen}"after"}}$.  For other contexts expressing more generic conditional situations, 〜たら is interpretted as ${\textsf{\color{limegreen}"if"}}$. When conjugated correctly, works with all verbs (食べたら, 泳いだら), adjectives (美味しかったら, 元気だったら) and nouns (人だったら).
+> 
+>
 
-**Grammar Equations**:
-- V-た + ら
-- い-adj-かった + ら
-- な-adj (stem) + だったら
-- noun + だったら
+#### 〜ている
+**Description**: Stacks onto て-form verbs, one primary use is to convey ${\textsf{\color{limegreen}continuous dynamic actions}}$ (swimming, eating, travelling etc...).  Another primary use is to convey ${\textsf{\color{limegreen}resulting states}}$. Verbs fall into one of these two categories, so depending on the *type of verb*, ている affects it differently. We need to think of ている as flipping on or "activating" a switch.  With something like 食べている, someone is now in the mode of *eating*.  Some verbs behave differently and happen instantly like a binary state switch, such as turning the lights on, つく (to turn on) → ついている (to be on), or the final state of death, 死ぬ (to die) → 死んでいる (to be dead).　For *resulting state* verbs like 死ぬ, to turn them into *dynamic actions*, you use the form ${\textsf{\color{limegreen}verb-ます-stem + かける}}$, so 死にかける (to begin to die).　We can now treat this form like any other dynamic action verb and *activate its mode*, 死にかけている (to be dying). See [this post](https://www.tofugu.com/japanese-grammar/verb-continuous-form-teiru/) for more details.
+> <ruby>去年<rt>きょねん</rt></ruby>から<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>している。\
+> I've been studying Japanese since last year.
+
+> テレビがついている。\
+> The TV is on.
+
+> あ、<ruby>虫<rt>むし</rt></ruby>が<ruby>死<rt>し</rt></ruby>んでいる。\
+> Ah, the bug is dead.
+
+> あ、<ruby>虫<rt>むし</rt></ruby>が<ruby>死<rt>し</rt></ruby>にかけている。\
+> Ah, the bug is dying.
