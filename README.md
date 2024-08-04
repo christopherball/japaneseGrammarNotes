@@ -136,10 +136,10 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 **Function**: ${\textsf{\color{limegreen}"from"}}$, ${\textsf{\color{limegreen} a reason or cause}}$\
 **Description**: Marks a starting place, time or source of information. Can also mark a reason / cause.
 > <ruby>友達<rt>ともだち</rt></ruby>から<ruby>聞<rt>き</rt></ruby>きました。\
-  I heard it from a friend.
+> I heard it from a friend.
   
 > <ruby>財布<rt>さいふ</rt></ruby>を<ruby>忘<rt>わす</rt></ruby>れたから<ruby>払<rt>はら</rt></ruby>えない。\
-  I forgot my wallet so I can't pay.
+> I forgot my wallet so I can't pay.
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### だけ
@@ -163,8 +163,7 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 **Function**: ${\textsf{\color{limegreen}Causal relationship}}$\
 **Description**: Derived from the [て-form of だ / です](#basic-conjugations), indicates a weak (から and ので being stronger) causal relationship. Just like the normal verb て-form, assumes the tense indicated by the end of the sentence.
 > <ruby>山口<rt>やまぐち</rt></ruby>さんは<ruby>病気<rt>びょうき</rt></ruby>で<ruby>学校<rt>がっこう</rt></ruby>を<ruby>休<rt>やす</rt></ruby>んだ。\
-  Mr. Yamaguchi was sick so he took a day off from school.
-> 
+> Mr. Yamaguchi was sick so he took a day off from school.
 
 **Function**: ${\textsf{\color{limegreen}Quantity or extent}}$\
 **Description**: Used to specify amounts in certain contexts.
@@ -192,6 +191,14 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 **Description**: Used for listing immediate successive events.
 > 
 > 
+
+**Function**: ${\textsf{\color{limegreen}Emphasizes manner of action}}$\
+**Description**: Optionally connects onomatopoeic adverbs to verbs, placing additional emphasis on the specific manner in which the action occurs, making the description more vivid and expressive.
+> <ruby>彼<rt>かれ</rt></ruby>はにっこりと<ruby>笑<rt>わら</rt></ruby>った。\
+> He broadly smiled. (with an emphasis on *broadly*)
+
+> <ruby>猫<rt>ねこ</rt></ruby>がそっと<ruby>歩<rt>ある</rt></ruby>いた。\
+> The cat softly walked. (with an emphasis on *softly*)
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### に
