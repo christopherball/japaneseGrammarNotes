@@ -34,7 +34,7 @@ A curated collection of Japanese grammar notes that may prove helpful.
       - [〜たら](#たら)
       - [〜ている](#ている)
     - [Transitive \& Intransitive](#transitive--intransitive)
-      - [Situation Patterns](#situation-patterns)
+      - [Construction Patterns](#construction-patterns)
 
 ## Introductory Notes
 
@@ -353,18 +353,27 @@ In writing, the following forms may also be used when the author is *explaining*
 
 ### Transitive & Intransitive
 
-#### Situation Patterns
-- Transitive: ${\textsf{\color{limegreen}[agent]は/が[thing]を[verb]}}$
+#### Construction Patterns
+- Transitive: ${\textsf{\color{limegreen}[agent] は/が [direct object] を [verb]}}$
+  - Require a direct object (marked by を).
+  - Require an agent (the performer of the action).
   - > <ruby>飛行機<rt>ひこうき</rt></ruby>が<ruby>爆弾<rt>ばくだん</rt></ruby>を<ruby>落<rt>お</rt></ruby>とします。\
     Airplanes drop bombs.
   - > <ruby>彼<rt>かれ</rt></ruby>がドアを<ruby>閉<rt>し</rt></ruby>めた。\
     He closed the door.
   - > <ruby>母<rt>はは</rt></ruby>はケーキを<ruby>焼<rt>や</rt></ruby>いた。\
     My mother baked a cake.
-- Intransitive: ${\textsf{\color{limegreen}[thing]が[verb]}}$
+  - > <ruby>猫<rt>ねこ</rt></ruby>がネズミを<ruby>捕<rt>つか</rt></ruby>まえた。\
+    The cat caught a mouse.
+- Intransitive: ${\textsf{\color{limegreen}[subject] が [verb]}}$
+  - There is no agent performing the action on another object.
+  - The subject itself undergoes or experiences the action.
   - > <ruby>爆弾<rt>ばくだん</rt></ruby>が<ruby>落<rt>お</rt></ruby>ちます。\
     Bombs fall.
   - > ドアが<ruby>閉<rt>し</rt></ruby>まった。\
     The door closed.
   - > ケーキが<ruby>焼<rt>や</rt></ruby>けた。\
     The cake baked.
+  - > ネズミが<ruby>捕<rt>つか</rt></ruby>まった。\
+    The mouse was caught.
+- Additional context like location or time can be included in both constructions above without altering their fundamental transitive or intransitive nature.
