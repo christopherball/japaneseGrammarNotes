@@ -29,10 +29,12 @@ A curated collection of Japanese grammar notes that may prove helpful.
   - [Copula Conjugations](#copula-conjugations)
     - [Basic Conjugations](#basic-conjugations)
     - [Written Form Conjugations](#written-form-conjugations)
-  - [Verb Forms](#verb-forms)
+  - [Verbs](#verbs)
     - [Fundamentals](#fundamentals-2)
       - [〜たら](#たら)
       - [〜ている](#ている)
+    - [Transitive \& Intransitive](#transitive--intransitive)
+      - [Situation Patterns](#situation-patterns)
 
 ## Introductory Notes
 
@@ -326,7 +328,7 @@ In writing, the following forms may also be used when the author is *explaining*
 | Non-Past | である   | であります   |
 | Past     | であった | でありました |
 
-## Verb Forms
+## Verbs
 
 ### Fundamentals
 
@@ -348,3 +350,21 @@ In writing, the following forms may also be used when the author is *explaining*
 
 > あ、<ruby>虫<rt>むし</rt></ruby>が<ruby>死<rt>し</rt></ruby>にかけている。\
 > Ah, the bug is dying.
+
+### Transitive & Intransitive
+
+#### Situation Patterns
+- Transitive: ${\textsf{\color{limegreen}[agent]は/が[thing]を[verb]}}$
+  - > <ruby>飛行機<rt>ひこうき</rt></ruby>が<ruby>爆弾<rt>ばくだん</rt></ruby>を<ruby>落<rt>お</rt></ruby>とします。\
+    Airplanes drop bombs.
+  - > <ruby>彼<rt>かれ</rt></ruby>がドアを<ruby>閉<rt>し</rt></ruby>めた。\
+    He closed the door.
+  - > <ruby>母<rt>はは</rt></ruby>はケーキを<ruby>焼<rt>や</rt></ruby>いた。\
+    My mother baked a cake.
+- Intransitive: ${\textsf{\color{limegreen}[thing]が[verb]}}$
+  - > <ruby>爆弾<rt>ばくだん</rt></ruby>が<ruby>落<rt>お</rt></ruby>ちます。\
+    Bombs fall.
+  - > ドアが<ruby>閉<rt>し</rt></ruby>まった。\
+    The door closed.
+  - > ケーキが<ruby>焼<rt>や</rt></ruby>けた。\
+    The cake baked.
