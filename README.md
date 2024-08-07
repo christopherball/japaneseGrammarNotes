@@ -255,10 +255,27 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### は
-**Function**: ${\textsf{\color{limegreen}Topic}}$\
-**Description**: Highlights what the sentence is about (establishes context).
+**Function**: ${\textsf{\color{limegreen}Topic Spotlight}}$\
+**Description**: "は is like a spotlight, shining on the topic and leaving other potential topics in the dark. This is because は creates a nuance of contrast between the topic it picks out and other potential topics, which are left in the shadows, whether those other topics are mentioned or not." ([source](https://www.tofugu.com/japanese-grammar/particle-wa/))
+
+How strong the nuance of contrast is, depends on a combination of the intonation of the speaker, paired with how unusual / unexpected the usage of は is in the specific sentence.
 > この<ruby>本<rt>ほん</rt></ruby>は<ruby>難<rt>むずか</rt></ruby>しい。\
-> This book is difficult. (*this book* being the context for what will then be spoken about)
+> This book is difficult. (assuming flat intonation, no implied nuance, just setting context with something familiar for new unknown information to follow)
+
+> コーヒーは<ruby>飲<rt>の</rt></ruby>みますか。\
+> Do you drink coffee? (feels unexpected with raised intonation, implied nuance being there could be other options you're intentionally excluding, such as tea)
+
+> <ruby>日本<rt>にほん</rt></ruby>には<ruby>行<rt>い</rt></ruby>ったことがある。\
+> I've been to Japan before. (they've been to Japan but perhaps not Korea)
+
+> <ruby>日本<rt>にほん</rt></ruby>は<ruby>行<rt>い</rt></ruby>ったことがある。\
+> I've been to Japan before. (same as previous example, but more casual by dropping に)
+
+> <ruby>弟<rt>おとうと</rt></ruby>とは<ruby>映画<rt>えいが</rt></ruby><ruby>館<rt>かん</rt></ruby>に<ruby>行<rt>い</rt></ruby>きました。\
+> I went to the movie theater with my younger brother. (nuance implies there may have been others left at home, etc. Without は, would read as a statement of fact without nuance)
+
+> <ruby>今年<rt>ことし</rt></ruby>は<ruby>日本<rt>にほん</rt></ruby>に<ruby>行<rt>い</rt></ruby>くんです。\
+> This year I will go to Japan. (explicit nuance is explanatory んです, implicit nuance is possibly excusing not making it in past years)
 
 ${\textsf{\color{grey}---------------------------------------------------}}$
 #### へ
