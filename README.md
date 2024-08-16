@@ -163,10 +163,13 @@ ${\textsf{\color{grey}---------------------------------------------------}}$
 > 
 > 
 
-**Function**: ${\textsf{\color{limegreen}Causal relationship}}$\
+**Function**: ${\textsf{\color{limegreen}Causal relationship (because X, Y / X, so Y)}}$\
 **Description**: Derived from the [て-form of だ / です](#basic-conjugations), indicates a weak (から and ので being stronger) causal relationship. Just like the normal verb て-form, assumes the tense indicated by the end of the sentence.
 > <ruby>山口<rt>やまぐち</rt></ruby>さんは<ruby>病気<rt>びょうき</rt></ruby>で<ruby>学校<rt>がっこう</rt></ruby>を<ruby>休<rt>やす</rt></ruby>んだ。\
 > Mr. Yamaguchi was sick so he took a day off from school.
+
+> <ruby>今日<rt>きょう</rt></ruby>は<ruby>日曜日<rt>にちようび</rt></ruby>で、<ruby>休<rt>やす</rt></ruby>みです。\
+> Because today is Sunday, I have the day off.
 
 **Function**: ${\textsf{\color{limegreen}Quantity or extent}}$\
 **Description**: Used to specify amounts in certain contexts.
