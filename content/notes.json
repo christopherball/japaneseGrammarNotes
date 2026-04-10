@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "copula-conjugations",
+    "title": "Copula Conjugations",
+    "summary": "Reference tables for plain, polite, honorific, and written Japanese copula forms.",
+    "category": "Copula",
+    "fragmentPath": "content/notes/copula-conjugations.html",
+    "createdAt": "2026-04-10T18:22:41.811Z",
+    "updatedAt": "2026-04-10T18:22:41.811Z"
+  },
+  {
+    "slug": "clauses-predicates",
+    "title": "Clauses & Predicates",
+    "summary": "Provides an overview of how these easily confused grammar terms function with respect to Japanese sentences.",
+    "category": "Grammar",
+    "fragmentPath": "content/notes/clauses-predicates.html",
+    "createdAt": "2026-04-10T18:43:06.736Z",
+    "updatedAt": "2026-04-10T18:43:06.736Z"
+  },
+  {
+    "slug": "conversions",
+    "title": "Conversions",
+    "summary": "Common Japanese conversion patterns between nouns, adjectives, adverbs, and verbs.",
+    "category": "Parts of Speech",
+    "fragmentPath": "content/notes/conversions.html",
+    "createdAt": "2026-04-10T18:22:19.744Z",
+    "updatedAt": "2026-04-10T18:22:19.744Z"
+  },
+  {
+    "slug": "v1-te-v2-patterns",
+    "title": "V1てV2 — Common V2 Verbs & Their Functions",
+    "summary": "How each verb in the V2 slot shapes the meaning of the action expressed by V1.",
+    "category": "Verbs",
+    "fragmentPath": "content/notes/v1-te-v2-patterns.html",
+    "createdAt": "2026-04-10T19:05:00.000Z",
+    "updatedAt": "2026-04-10T19:05:00.000Z"
+  }
+]
