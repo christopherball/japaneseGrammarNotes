@@ -13,6 +13,28 @@ are driven by `content/notes.json`.
 Opening `index.html` directly from Finder will not work correctly because the app
 fetches the manifest and note fragments.
 
+## Deployment Build
+
+Run:
+
+```bash
+npm run build
+```
+
+This creates a clean `dist/` folder containing only the files needed to deploy the
+site:
+
+- `index.html`
+- `app.js`
+- `styles.css`
+- `content/`
+
+If you want to preview the built output locally, run:
+
+```bash
+npm run serve:dist
+```
+
 ## Note Workflow
 
 Notes are created from Markdown currently in the macOS clipboard. Markdown is only

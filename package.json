@@ -4,12 +4,13 @@
   "private": true,
   "description": "Static Japanese grammar notes site with a clipboard-driven note generator.",
   "scripts": {
+    "build": "node scripts/build-dist.mjs",
     "notes": "node scripts/notes.mjs",
-    "serve": "python3 -m http.server 4173"
+    "serve": "python3 -m http.server 4173",
+    "serve:dist": "python3 -m http.server 4173 -d dist"
   },
   "dependencies": {
     "marked": "^15.0.12",
     "sanitize-html": "^2.17.0"
   }
 }
-
