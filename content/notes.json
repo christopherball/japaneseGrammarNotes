@@ -34,5 +34,14 @@
     "fragmentPath": "content/notes/v1-te-v2-patterns.html",
     "createdAt": "2026-04-10T19:05:00.000Z",
     "updatedAt": "2026-04-10T19:05:00.000Z"
+  },
+  {
+    "slug": "verb-conjugation",
+    "title": "Verb Conjugation",
+    "summary": "Two-sided reference tables for godan, ichidan, irregular, and て-form / た-form verb conjugations.",
+    "category": "Verbs",
+    "fragmentPath": "content/notes/verb-conjugation.html",
+    "createdAt": "2026-04-11T00:21:19Z",
+    "updatedAt": "2026-04-11T00:21:19Z"
   }
 ]

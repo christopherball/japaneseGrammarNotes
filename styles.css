@@ -548,6 +548,71 @@ h6 {
     padding-bottom: 0.7rem;
 }
 
+.note-content .conjugation-axis-table {
+    width: auto;
+    min-width: 760px;
+}
+
+.note-content .conjugation-axis-table th,
+.note-content .conjugation-axis-table td {
+    white-space: nowrap;
+}
+
+.note-content .axis-label,
+.note-content .axis-left,
+.note-content .axis-arrow-left {
+    text-align: left;
+}
+
+.note-content .axis-form {
+    width: 12rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.note-content .axis-right,
+.note-content .axis-arrow-right {
+    text-align: right;
+}
+
+.note-content .axis-label {
+    width: 7.5rem;
+    color: var(--text-secondary);
+}
+
+.note-content .axis-left,
+.note-content .axis-right {
+    font-family: var(--title-font);
+    font-size: 1.02rem;
+}
+
+.note-content .axis-arrow-left,
+.note-content .axis-arrow-right {
+    width: 3rem;
+    color: var(--text-secondary);
+}
+
+.note-content .suffix-pattern-table {
+    width: auto;
+    min-width: 22rem;
+}
+
+.note-content .suffix-pattern-table th,
+.note-content .suffix-pattern-table td {
+    text-align: left;
+}
+
+.table-scroll.table-scroll-compact {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.note-content .axis-note {
+    color: var(--text-secondary);
+    font-size: 0.94rem;
+}
+
 .note-content hr {
     border: 0;
     border-top: 1px solid var(--border);
