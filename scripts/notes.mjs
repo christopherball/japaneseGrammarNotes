@@ -11,8 +11,10 @@ import { marked } from "marked";
 const execFileAsync = promisify(execFile);
 
 const repoRoot = process.cwd();
+const buildScriptPath = path.join(repoRoot, "scripts", "build-dist.mjs");
 const manifestPath = path.join(repoRoot, "content", "notes.json");
 const notesDirectory = path.join(repoRoot, "content", "notes");
+const booleanOptions = new Set(["no-build"]);
 
 marked.setOptions({
     gfm: true,
@@ -146,7 +148,7 @@ async function createNote(options) {
     });
     await writeManifest(manifest);
 
-    console.log(`Created note "${title}" at ${fragmentPath}`);
+    await finalizeMutation(options, `Created note "${title}" at ${fragmentPath}`);
 }
 
 async function updateNote(options) {
@@ -171,7 +173,7 @@ async function updateNote(options) {
     await writeFragment(slug, markdown);
     await writeManifest(manifest);
 
-    console.log(`Updated note "${note.title}" (${slug}).`);
+    await finalizeMutation(options, `Updated note "${note.title}" (${slug}).`);
 }
 
 async function editNote(options) {
@@ -223,7 +225,7 @@ async function editNote(options) {
 
     await writeManifest(manifest);
 
-    console.log(`Edited note "${slug}".`);
+    await finalizeMutation(options, `Edited note "${slug}".`);
 }
 
 async function deleteNote(options) {
@@ -242,7 +244,7 @@ async function deleteNote(options) {
     await rm(path.join(repoRoot, note.fragmentPath), { force: true });
     await writeManifest(manifest);
 
-    console.log(`Deleted note "${slug}".`);
+    await finalizeMutation(options, `Deleted note "${slug}".`);
 }
 
 async function writeFragment(slug, markdown) {
@@ -339,6 +341,44 @@ function relativeFragmentPath(slug) {
     return `content/notes/${slug}.html`;
 }
 
+async function finalizeMutation(options, successMessage) {
+    if (options["no-build"]) {
+        console.log(`${successMessage}\nSkipped dist rebuild (--no-build).`);
+        return;
+    }
+
+    try {
+        await rebuildDist();
+    } catch (error) {
+        throw new Error(
+            `${successMessage}\nSource files were updated, but rebuilding dist failed: ${error.message}`,
+        );
+    }
+
+    console.log(`${successMessage}\nRebuilt dist/.`);
+}
+
+async function rebuildDist() {
+    try {
+        const { stdout, stderr } = await execFileAsync(process.execPath, [buildScriptPath], {
+            cwd: repoRoot,
+        });
+
+        if (stdout) {
+            process.stdout.write(stdout);
+        }
+        if (stderr) {
+            process.stderr.write(stderr);
+        }
+    } catch (error) {
+        const detail = [error.stdout, error.stderr, error.message]
+            .filter(Boolean)
+            .join("\n")
+            .trim();
+        throw new Error(detail || "Unknown dist build failure.");
+    }
+}
+
 function requireOption(value, message) {
     if (!value) {
         throw new Error(message);
@@ -357,6 +397,11 @@ function parseArgs(args) {
         }
 
         const key = token.slice(2);
+        if (booleanOptions.has(key)) {
+            options[key] = true;
+            continue;
+        }
+
         const value = args[index + 1];
         if (!value || value.startsWith("--")) {
             throw new Error(`Expected a value after "${token}".`);
@@ -380,10 +425,10 @@ function slugify(value) {
 
 function printUsage() {
     console.log(`Usage:
-  node scripts/notes.mjs create --title "My Note" [--id "my-note"] [--summary "..."] [--category "Grammar"]
-  node scripts/notes.mjs update --id "my-note" [--title "New title"] [--summary "..."] [--category "Grammar"]
-  node scripts/notes.mjs edit --id "my-note" [--title "New title"] [--summary "..."] [--category "Grammar"] [--new-id "new-id"]
-  node scripts/notes.mjs delete --id "my-note"`);
+  node scripts/notes.mjs create --title "My Note" [--id "my-note"] [--summary "..."] [--category "Grammar"] [--no-build]
+  node scripts/notes.mjs update --id "my-note" [--title "New title"] [--summary "..."] [--category "Grammar"] [--no-build]
+  node scripts/notes.mjs edit --id "my-note" [--title "New title"] [--summary "..."] [--category "Grammar"] [--new-id "new-id"] [--no-build]
+  node scripts/notes.mjs delete --id "my-note" [--no-build]`);
 }
 
 await main();

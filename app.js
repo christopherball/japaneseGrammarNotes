@@ -1,5 +1,12 @@
 const appElement = document.querySelector("#app");
 const manifestUrl = "content/notes.json";
+const categoryOrder = [
+    "Sentence Structure",
+    "Particles",
+    "Parts of Speech",
+    "Conjugation",
+    "Constructions"
+];
 
 let manifest = [];
 
@@ -278,7 +285,11 @@ function renderNoteNotFound(slug) {
 
 function groupNotesByCategory(entries) {
     const sorted = [...entries].sort((left, right) => {
-        const categoryCompare = left.category.localeCompare(right.category);
+        const leftIndex = categoryOrder.indexOf(left.category);
+        const rightIndex = categoryOrder.indexOf(right.category);
+        const leftSort = leftIndex === -1 ? Number.MAX_SAFE_INTEGER : leftIndex;
+        const rightSort = rightIndex === -1 ? Number.MAX_SAFE_INTEGER : rightIndex;
+        const categoryCompare = leftSort - rightSort || left.category.localeCompare(right.category);
         if (categoryCompare !== 0) {
             return categoryCompare;
         }

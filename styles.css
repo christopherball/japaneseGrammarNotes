@@ -21,7 +21,8 @@
     --shadow: 0 24px 60px rgba(18, 22, 24, 0.08);
     --title-font: "Iowan Old Style", "Palatino Linotype", "Book Antiqua",
         "Georgia", serif;
-    --body-font: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    --body-font: -apple-system, BlinkMacSystemFont, system-ui, "Helvetica Neue",
+        sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -472,6 +473,11 @@ h6 {
     font-size: 0.95rem;
 }
 
+.note-content .particles-overview-table {
+    min-width: 980px;
+    table-layout: fixed;
+}
+
 .note-content th {
     padding: 0.85rem 0.9rem;
     text-align: left;
@@ -500,33 +506,34 @@ h6 {
 }
 
 .note-content .verb {
-    font-family: var(--title-font);
-    font-size: 1.4rem;
-    line-height: 1.15;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: inherit;
 }
 
 .note-content .meaning {
-    line-height: 1.55;
+    line-height: inherit;
 }
 
 .note-content .contrast {
     margin-top: 0.35rem;
-    color: var(--text-secondary);
-    font-size: 0.8rem;
-    font-style: italic;
-    line-height: 1.5;
+    color: inherit;
+    font-size: inherit;
+    font-style: normal;
+    line-height: inherit;
 }
 
 .note-content .jp {
-    font-size: 0.95rem;
-    line-height: 1.55;
+    font-size: inherit;
+    line-height: inherit;
 }
 
 .note-content .en {
     margin-top: 0.15rem;
-    color: var(--text-secondary);
-    font-size: 0.82rem;
-    line-height: 1.5;
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
 }
 
 .note-content .ex {
@@ -582,8 +589,8 @@ h6 {
 
 .note-content .axis-left,
 .note-content .axis-right {
-    font-family: var(--title-font);
-    font-size: 1.02rem;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 .note-content .axis-arrow-left,

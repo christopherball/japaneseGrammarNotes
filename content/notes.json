@@ -3,7 +3,7 @@
     "slug": "copula-conjugations",
     "title": "Copula Conjugations",
     "summary": "Reference tables for plain, polite, honorific, and written Japanese copula forms.",
-    "category": "Copula",
+    "category": "Conjugation",
     "fragmentPath": "content/notes/copula-conjugations.html",
     "createdAt": "2026-04-10T18:22:41.811Z",
     "updatedAt": "2026-04-10T18:22:41.811Z"
@@ -12,10 +12,19 @@
     "slug": "clauses-predicates",
     "title": "Clauses & Predicates",
     "summary": "Provides an overview of how these easily confused grammar terms function with respect to Japanese sentences.",
-    "category": "Grammar",
+    "category": "Sentence Structure",
     "fragmentPath": "content/notes/clauses-predicates.html",
     "createdAt": "2026-04-10T18:43:06.736Z",
     "updatedAt": "2026-04-10T18:43:06.736Z"
+  },
+  {
+    "slug": "common-japanese-particles",
+    "title": "Common Japanese Particles",
+    "summary": "Provides a breakdown of how most Japanese particles work.",
+    "category": "Particles",
+    "fragmentPath": "content/notes/common-japanese-particles.html",
+    "createdAt": "2026-04-12T19:58:23.363Z",
+    "updatedAt": "2026-04-12T19:58:23.363Z"
   },
   {
     "slug": "conversions",
@@ -27,10 +36,10 @@
     "updatedAt": "2026-04-10T18:22:19.744Z"
   },
   {
-    "slug": "v1-te-v2-patterns",
-    "title": "V1てV2 — Common V2 Verbs & Their Functions",
+    "slug": "v1-te-v2-how-v2-shapes-meaning",
+    "title": "V1てV2 — How V2 Shapes Meaning",
     "summary": "How each verb in the V2 slot shapes the meaning of the action expressed by V1.",
-    "category": "Verbs",
+    "category": "Constructions",
     "fragmentPath": "content/notes/v1-te-v2-patterns.html",
     "createdAt": "2026-04-10T19:05:00.000Z",
     "updatedAt": "2026-04-10T19:05:00.000Z"
@@ -39,7 +48,7 @@
     "slug": "verb-conjugation",
     "title": "Verb Conjugation",
     "summary": "Two-sided reference tables for godan, ichidan, irregular, and て-form / た-form verb conjugations.",
-    "category": "Verbs",
+    "category": "Conjugation",
     "fragmentPath": "content/notes/verb-conjugation.html",
     "createdAt": "2026-04-11T00:21:19Z",
     "updatedAt": "2026-04-11T00:21:19Z"

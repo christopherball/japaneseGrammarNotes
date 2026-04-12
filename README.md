@@ -65,14 +65,18 @@ title: Copula Conjugations
 2. Run:
 
 ```bash
-npm run notes -- create --title "My New Note" --summary "Short description" --category "Grammar"
+npm run notes -- create --title "My New Note" --summary "Short description" --category "Constructions"
 ```
 
 Optional flags:
 
 - `--id "my-new-note"` to choose the page ID yourself
+- `--no-build` to skip the automatic `dist/` rebuild for that command
 - omit `--summary` to generate a short excerpt automatically from the imported content
 - omit `--category` to use `General`
+
+By default, note create/update/edit/delete commands now rebuild `dist/` automatically
+after updating the source files.
 
 ### Update An Existing Note
 
@@ -83,6 +87,7 @@ npm run notes -- update --id "my-note" --title "Optional New Title"
 ```
 
 Use `update` when you want to replace the page content from fresh clipboard Markdown.
+Pass `--no-build` if you want to skip the automatic `dist/` rebuild.
 
 ### Edit Note Metadata
 
@@ -90,13 +95,13 @@ Use `edit` when you want to change title, category, summary, or page ID without
 touching the note body.
 
 ```bash
-npm run notes -- edit --id "copula-conjugations" --category "Grammar"
+npm run notes -- edit --id "copula-conjugations" --category "Conjugation"
 ```
 
 Examples:
 
 ```bash
-npm run notes -- edit --id "copula-conjugations" --category "Grammar"
+npm run notes -- edit --id "copula-conjugations" --category "Conjugation"
 npm run notes -- edit --id "copula-conjugations" --summary "Reference tables for Japanese copula forms."
 npm run notes -- edit --id "copula-conjugations" --title "Copula Forms"
 npm run notes -- edit --id "copula-conjugations" --new-id "copula-forms"
@@ -115,4 +120,5 @@ The last example means:
 npm run notes -- delete --id "my-note"
 ```
 
-Deleting a note removes both the fragment file and the manifest entry.
+Deleting a note removes both the fragment file and the manifest entry. Pass
+`--no-build` if you want to skip the automatic `dist/` rebuild.
