@@ -18,6 +18,24 @@
     "updatedAt": "2026-04-10T18:43:06.736Z"
   },
   {
+    "slug": "clause-connectors",
+    "title": "Clause Connectors",
+    "summary": "Compares major Japanese clause connectors such as から, ので, けど, が, のに, と, たら, and ば.",
+    "category": "Sentence Structure",
+    "fragmentPath": "content/notes/clause-connectors.html",
+    "createdAt": "2026-04-12T23:45:00.000Z",
+    "updatedAt": "2026-04-12T23:45:00.000Z"
+  },
+  {
+    "slug": "additive-connectors-and",
+    "title": "Additive Connectors (\"And\")",
+    "summary": "Compares Japanese additive linkers such as 〜て, 〜し, と, や, 〜で, and 〜くて across clauses, nouns, and adjectives.",
+    "category": "Sentence Structure",
+    "fragmentPath": "content/notes/additive-connectors-and.html",
+    "createdAt": "2026-04-12T23:30:00.000Z",
+    "updatedAt": "2026-04-12T23:30:00.000Z"
+  },
+  {
     "slug": "common-japanese-particles",
     "title": "Common Japanese Particles",
     "summary": "Provides a breakdown of how most Japanese particles work.",
