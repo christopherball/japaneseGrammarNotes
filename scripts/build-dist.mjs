@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 
-import { copyFile, cp, mkdir, rm, stat } from "node:fs/promises";
+import { copyFile, cp, mkdir, readFile, rm, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 
 const repoRoot = process.cwd();
 const distRoot = path.join(repoRoot, "dist");
+const manifestPath = path.join(repoRoot, "content", "notes.json");
+const searchIndexDestination = path.join(distRoot, "content", "search-index.json");
 
 const targets = [
     { source: "index.html", destination: "index.html", type: "file" },
@@ -35,10 +37,13 @@ async function buildDist() {
         await copyFile(sourcePath, destinationPath);
     }
 
+    await writeSearchIndex();
+
     console.log("Built deployable site into dist/");
     for (const target of targets) {
         console.log(`- ${target.destination}`);
     }
+    console.log("- content/search-index.json");
 }
 
 async function assertExists(filePath, label) {
@@ -47,4 +52,46 @@ async function assertExists(filePath, label) {
     } catch {
         throw new Error(`Missing build input: ${label}`);
     }
+}
+
+async function writeSearchIndex() {
+    const manifest = JSON.parse(await readFile(manifestPath, "utf8"));
+    const searchIndex = await Promise.all(
+        manifest.map(async (note) => {
+            const fragment = await readFile(path.join(repoRoot, note.fragmentPath), "utf8");
+            return createSearchEntry(note, fragment);
+        }),
+    );
+
+    await mkdir(path.dirname(searchIndexDestination), { recursive: true });
+    await writeFile(searchIndexDestination, `${JSON.stringify(searchIndex, null, 2)}\n`);
+}
+
+function createSearchEntry(note, fragment) {
+    const headings = [...fragment.matchAll(/<h([1-6])[^>]*>([\s\S]*?)<\/h\1>/gi)]
+        .map(([, , text]) => cleanText(text))
+        .filter(Boolean);
+
+    return {
+        slug: note.slug,
+        title: note.title,
+        summary: note.summary,
+        category: note.category,
+        headings,
+        text: cleanText(fragment),
+    };
+}
+
+function cleanText(value) {
+    return decodeHtmlEntities(value.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim());
+}
+
+function decodeHtmlEntities(value) {
+    return value
+        .replaceAll("&nbsp;", " ")
+        .replaceAll("&amp;", "&")
+        .replaceAll("&lt;", "<")
+        .replaceAll("&gt;", ">")
+        .replaceAll("&quot;", '"')
+        .replaceAll("&#39;", "'");
 }

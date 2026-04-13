@@ -1,5 +1,6 @@
 const appElement = document.querySelector("#app");
 const manifestUrl = "content/notes.json";
+const searchIndexUrl = "content/search-index.json";
 const categoryOrder = [
     "Sentence Structure",
     "Particles",
@@ -9,11 +10,16 @@ const categoryOrder = [
 ];
 
 let manifest = [];
+let searchIndex = [];
+let searchIndexPromise = null;
+let isSearchIndexReady = false;
+let homeSearchQuery = "";
 
 await init().catch(renderStartupError);
 
 async function init() {
     document.addEventListener("click", handleDocumentClick);
+    document.addEventListener("input", handleDocumentInput);
     window.addEventListener("hashchange", renderCurrentRoute);
 
     if (window.location.protocol === "file:") {
@@ -22,6 +28,7 @@ async function init() {
     }
 
     await loadManifest();
+    void ensureSearchIndexLoaded();
     await renderCurrentRoute();
 }
 
@@ -35,6 +42,75 @@ async function loadManifest() {
     manifest = Array.isArray(entries) ? entries : [];
 }
 
+async function ensureSearchIndexLoaded() {
+    if (searchIndexPromise) {
+        return searchIndexPromise;
+    }
+
+    searchIndexPromise = loadSearchIndex()
+        .catch(() => buildSearchIndexFromFragments())
+        .then((entries) => {
+            searchIndex = Array.isArray(entries) ? entries : [];
+            isSearchIndexReady = true;
+            return searchIndex;
+        })
+        .catch(() => {
+            searchIndex = [];
+            isSearchIndexReady = true;
+            return searchIndex;
+        })
+        .finally(() => {
+            if (parseRoute(window.location.hash).type === "home") {
+                updateHomeSearchResults();
+            }
+        });
+
+    return searchIndexPromise;
+}
+
+async function loadSearchIndex() {
+    const response = await fetch(searchIndexUrl, { cache: "no-store" });
+    if (!response.ok) {
+        throw new Error(`Unable to load search index (${response.status}).`);
+    }
+
+    const entries = await response.json();
+    return Array.isArray(entries) ? entries : [];
+}
+
+async function buildSearchIndexFromFragments() {
+    const entries = await Promise.all(
+        manifest.map(async (note) => {
+            try {
+                const fragment = await fetchFragment(note.fragmentPath);
+                return createSearchEntry(note, fragment);
+            } catch {
+                return createSearchEntry(note, "");
+            }
+        }),
+    );
+
+    return entries;
+}
+
+function createSearchEntry(note, fragment) {
+    const parser = new DOMParser();
+    const documentFragment = parser.parseFromString(`<article>${fragment}</article>`, "text/html");
+    const root = documentFragment.body.firstElementChild || documentFragment.body;
+    const headings = [...root.querySelectorAll("h1, h2, h3, h4, h5, h6")]
+        .map((heading) => normalizeWhitespace(heading.textContent || ""))
+        .filter(Boolean);
+
+    return {
+        slug: note.slug,
+        title: note.title,
+        summary: note.summary,
+        category: note.category,
+        headings,
+        text: normalizeWhitespace(root.textContent || ""),
+    };
+}
+
 async function renderCurrentRoute() {
     const route = parseRoute(window.location.hash);
 
@@ -44,7 +120,7 @@ async function renderCurrentRoute() {
     }
 
     if (route.type === "note") {
-        await renderNote(route.slug);
+        await renderNote(route.slug, route.query);
         return;
     }
 
@@ -86,9 +162,14 @@ function parseRoute(rawHash) {
         return { type: "home" };
     }
 
-    const noteMatch = hash.match(/^#\/notes\/([^/?#]+)$/);
+    const noteMatch = hash.match(/^#\/notes\/([^/?#]+)(?:\?([^#]*))?$/);
     if (noteMatch) {
-        return { type: "note", slug: decodeURIComponent(noteMatch[1]) };
+        const params = new URLSearchParams(noteMatch[2] || "");
+        return {
+            type: "note",
+            slug: decodeURIComponent(noteMatch[1]),
+            query: (params.get("query") || "").trim(),
+        };
     }
 
     return { type: "missing" };
@@ -130,21 +211,9 @@ function renderHome() {
     const grouped = groupNotesByCategory(manifest);
     const totalNotes = manifest.length;
     const totalCategories = Object.keys(grouped).length;
-
     const sections = Object.entries(grouped)
         .map(([category, notes]) => {
-            const rows = notes
-                .map((note) => {
-                    return `
-                        <article class="note-row">
-                            <a class="note-link" href="#/notes/${encodeURIComponent(note.slug)}">
-                                <span class="note-title">${escapeHtml(note.title)}</span>
-                            </a>
-                            <p class="note-summary">${escapeHtml(note.summary)}</p>
-                        </article>
-                    `;
-                })
-                .join("");
+            const rows = notes.map(renderBrowseRow).join("");
 
             return `
                 <section class="category-section">
@@ -162,23 +231,226 @@ function renderHome() {
     appElement.innerHTML = `
         <section class="view home-view">
             <header class="hero">
-                <h1>Browse Notes</h1>
-                <p class="hero-copy">
-                    Grammar notes, pattern tables, and quick reference pages.
-                </p>
-                <div class="hero-meta">
-                    <span class="hero-chip">${totalNotes} note${totalNotes === 1 ? "" : "s"}</span>
-                    <span class="hero-chip">${totalCategories} categor${totalCategories === 1 ? "y" : "ies"}</span>
+                <div class="hero-layout">
+                    <div class="hero-intro">
+                        <h1>Browse Notes</h1>
+                        <p class="hero-copy">
+                            Grammar notes, pattern tables, and quick reference pages.
+                        </p>
+                        <div class="hero-meta">
+                            <span class="hero-chip">${totalNotes} note${totalNotes === 1 ? "" : "s"}</span>
+                            <span class="hero-chip">${totalCategories} categor${totalCategories === 1 ? "y" : "ies"}</span>
+                        </div>
+                    </div>
+                    <div class="search-panel">
+                        <input
+                            id="note-search-input"
+                            class="search-input"
+                            type="search"
+                            name="query"
+                            value="${escapeHtml(homeSearchQuery)}"
+                            placeholder="Try searching for なら, passive, 〜し, or particles"
+                            aria-label="Search notes"
+                            autocomplete="off"
+                            spellcheck="false"
+                        />
+                    </div>
                 </div>
             </header>
             <div class="home-sections">
-                ${sections}
+                <div id="home-search-results" class="home-search-results" hidden></div>
+                <div id="home-browse-sections" class="home-browse-sections">
+                    ${sections}
+                </div>
+            </div>
+        </section>
+    `;
+
+    updateHomeSearchResults();
+}
+
+function renderBrowseRow(note) {
+    return `
+        <article class="note-row">
+            <a class="note-link" href="#/notes/${encodeURIComponent(note.slug)}">
+                <span class="note-title">${escapeHtml(note.title)}</span>
+            </a>
+            <p class="note-summary">${escapeHtml(note.summary)}</p>
+        </article>
+    `;
+}
+
+function updateHomeSearchResults() {
+    const resultsElement = document.querySelector("#home-search-results");
+    const browseElement = document.querySelector("#home-browse-sections");
+
+    if (!resultsElement || !browseElement) {
+        return;
+    }
+
+    const query = homeSearchQuery.trim();
+    if (!query) {
+        resultsElement.hidden = true;
+        browseElement.hidden = false;
+        resultsElement.innerHTML = "";
+        return;
+    }
+
+    resultsElement.hidden = false;
+    browseElement.hidden = true;
+
+    if (!isSearchIndexReady) {
+        resultsElement.innerHTML = `
+            <section class="empty-state search-state">
+                <p>Building a quick search index for the current notes…</p>
+            </section>
+        `;
+        return;
+    }
+
+    const results = searchNotes(query);
+    resultsElement.innerHTML = renderSearchResults(results, query);
+}
+
+function renderSearchResults(results, query) {
+    if (results.length === 0) {
+        return `
+            <section class="empty-state search-state">
+                <p>No notes mention <code>${escapeHtml(query)}</code> yet.</p>
+            </section>
+        `;
+    }
+
+    const rows = results.map((result) => renderSearchResultRow(result, query)).join("");
+    return `
+        <section class="category-section search-results-section">
+            <header class="category-header">
+                <h2 class="category-title">Search Results</h2>
+            </header>
+            <div class="note-list">
+                ${rows}
             </div>
         </section>
     `;
 }
 
-async function renderNote(slug) {
+function renderSearchResultRow(result, query) {
+    const href = `#/notes/${encodeURIComponent(result.slug)}?query=${encodeURIComponent(query)}`;
+    const matchLine = result.matchLabel
+        ? `<p class="search-match">Matched in ${escapeHtml(result.matchLabel)}</p>`
+        : "";
+    const snippet = result.displayText
+        ? `<p class="search-snippet">${highlightSearchText(result.displayText, query)}</p>`
+        : "";
+    const copy = snippet ? `<div class="search-copy">${snippet}</div>` : "";
+    const rowClass = snippet ? "note-row search-result-row" : "note-row search-result-row search-result-row-compact";
+
+    return `
+        <article class="${rowClass}">
+            <a class="note-link" href="${href}">
+                <span class="note-title">${highlightSearchText(result.title, query)}</span>
+                ${matchLine}
+            </a>
+            ${copy}
+        </article>
+    `;
+}
+
+function searchNotes(query) {
+    const normalizedQuery = normalizeSearchValue(query);
+    if (!normalizedQuery) {
+        return [];
+    }
+
+    return searchIndex
+        .map((entry) => rankSearchEntry(entry, normalizedQuery, query))
+        .filter(Boolean)
+        .sort((left, right) => right.score - left.score || left.title.localeCompare(right.title));
+}
+
+function rankSearchEntry(entry, normalizedQuery, rawQuery) {
+    let score = 0;
+    let matchLabel = "";
+    let snippet = "";
+
+    const titleIndex = normalizeSearchValue(entry.title).indexOf(normalizedQuery);
+    if (titleIndex !== -1) {
+        score += scoreMatch(500, titleIndex);
+        matchLabel ||= "title";
+    }
+
+    const headingMatch = findFirstListMatch(entry.headings, normalizedQuery);
+    if (headingMatch) {
+        score += scoreMatch(320, headingMatch.index);
+        matchLabel ||= "section heading";
+        snippet ||= headingMatch.value;
+    }
+
+    const summaryIndex = normalizeSearchValue(entry.summary).indexOf(normalizedQuery);
+    if (summaryIndex !== -1) {
+        score += scoreMatch(220, summaryIndex);
+        matchLabel ||= "summary";
+        snippet ||= entry.summary;
+    }
+
+    const categoryIndex = normalizeSearchValue(entry.category).indexOf(normalizedQuery);
+    if (categoryIndex !== -1) {
+        score += scoreMatch(140, categoryIndex);
+        matchLabel ||= "category";
+    }
+
+    const textIndex = normalizeSearchValue(entry.text).indexOf(normalizedQuery);
+    if (textIndex !== -1) {
+        score += scoreMatch(120, textIndex);
+        matchLabel ||= "note content";
+        snippet ||= buildSearchSnippet(entry.text, textIndex, rawQuery.length);
+    }
+
+    if (score === 0) {
+        return null;
+    }
+
+    return {
+        slug: entry.slug,
+        title: entry.title,
+        matchLabel,
+        displayText: snippet,
+        score,
+    };
+}
+
+function scoreMatch(weight, index) {
+    return Math.max(1, weight - Math.min(index, weight - 1));
+}
+
+function findFirstListMatch(values, normalizedQuery) {
+    for (const value of values) {
+        const index = normalizeSearchValue(value).indexOf(normalizedQuery);
+        if (index !== -1) {
+            return { value, index };
+        }
+    }
+
+    return null;
+}
+
+function buildSearchSnippet(text, matchIndex, queryLength) {
+    const radius = 72;
+    const start = Math.max(0, matchIndex - radius);
+    const end = Math.min(text.length, matchIndex + queryLength + radius);
+    let snippet = text.slice(start, end).trim();
+
+    if (start > 0) {
+        snippet = `…${snippet}`;
+    }
+    if (end < text.length) {
+        snippet = `${snippet}…`;
+    }
+
+    return snippet;
+}
+
+async function renderNote(slug, searchQuery = "") {
     const note = manifest.find((entry) => entry.slug === slug);
 
     if (!note) {
@@ -211,6 +483,9 @@ async function renderNote(slug) {
         const fragment = await fetchFragment(note.fragmentPath);
         contentElement.innerHTML = fragment;
         prepareNoteContent(contentElement);
+        if (searchQuery) {
+            focusFirstSearchMatch(contentElement, searchQuery);
+        }
     } catch (error) {
         contentElement.innerHTML = `
             <div class="callout warning">
@@ -253,6 +528,69 @@ function wrapTables(container) {
         table.parentNode.insertBefore(wrapper, table);
         wrapper.appendChild(table);
     }
+}
+
+function focusFirstSearchMatch(container, query) {
+    const normalizedQuery = normalizeSearchValue(query);
+    if (!normalizedQuery) {
+        return;
+    }
+
+    const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, {
+        acceptNode(node) {
+            const parent = node.parentElement;
+            if (!parent || parent.closest("mark, script, style")) {
+                return NodeFilter.FILTER_REJECT;
+            }
+
+            const text = node.nodeValue || "";
+            if (!text.trim()) {
+                return NodeFilter.FILTER_REJECT;
+            }
+
+            return normalizeSearchValue(text).includes(normalizedQuery)
+                ? NodeFilter.FILTER_ACCEPT
+                : NodeFilter.FILTER_SKIP;
+        },
+    });
+
+    let node;
+    while ((node = walker.nextNode())) {
+        const originalText = node.nodeValue || "";
+        const match = originalText.match(new RegExp(escapeRegExp(query.trim()), "iu"));
+        if (!match || typeof match.index !== "number") {
+            continue;
+        }
+
+        const matchIndex = match.index;
+        const before = originalText.slice(0, matchIndex);
+        const matchText = match[0];
+        const after = originalText.slice(matchIndex + matchText.length);
+        const marker = document.createElement("mark");
+        marker.className = "note-hit";
+        marker.textContent = matchText;
+
+        const fragment = document.createDocumentFragment();
+        if (before) {
+            fragment.append(before);
+        }
+        fragment.append(marker);
+        if (after) {
+            fragment.append(after);
+        }
+
+        node.parentNode.replaceChild(fragment, node);
+        focusSearchMarker(marker);
+        return;
+    }
+}
+
+function focusSearchMarker(marker) {
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            marker.scrollIntoView({ behavior: "smooth", block: "start", inline: "center" });
+        });
+    });
 }
 
 function renderMissingRoute() {
@@ -328,6 +666,42 @@ function slugify(value) {
         .replace(/^-+|-+$/g, "");
 }
 
+function normalizeWhitespace(value) {
+    return String(value).replace(/\s+/g, " ").trim();
+}
+
+function normalizeSearchValue(value) {
+    return normalizeWhitespace(value).toLocaleLowerCase();
+}
+
+function highlightSearchText(text, query) {
+    const source = String(text);
+    const trimmedQuery = query.trim();
+    if (!trimmedQuery) {
+        return escapeHtml(source);
+    }
+
+    const matcher = new RegExp(escapeRegExp(trimmedQuery), "giu");
+    let result = "";
+    let lastIndex = 0;
+    let match;
+
+    while ((match = matcher.exec(source)) !== null) {
+        const start = match.index;
+        const value = match[0];
+        result += escapeHtml(source.slice(lastIndex, start));
+        result += `<mark class="search-hit">${escapeHtml(value)}</mark>`;
+        lastIndex = start + value.length;
+    }
+
+    result += escapeHtml(source.slice(lastIndex));
+    return result;
+}
+
+function escapeRegExp(value) {
+    return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
 function escapeHtml(value) {
     return String(value)
         .replaceAll("&", "&amp;")
@@ -359,4 +733,17 @@ function handleDocumentClick(event) {
             target.scrollIntoView({ behavior: "smooth", block: "start" });
         }
     }
+}
+
+function handleDocumentInput(event) {
+    const input = event.target.closest("#note-search-input");
+    if (!input) {
+        return;
+    }
+
+    homeSearchQuery = input.value;
+    if (homeSearchQuery.trim()) {
+        void ensureSearchIndexLoaded();
+    }
+    updateHomeSearchResults();
 }

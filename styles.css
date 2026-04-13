@@ -225,6 +225,46 @@ h6 {
     margin-top: 1.5rem;
 }
 
+.hero-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, 26rem);
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.hero-intro {
+    min-width: 0;
+}
+
+.search-panel {
+    justify-self: end;
+    width: min(100%, 26rem);
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1px solid var(--border-strong);
+    border-radius: 0.95rem;
+    background: var(--bg);
+    color: var(--text-primary);
+    font: inherit;
+    transition:
+        border-color 160ms ease,
+        box-shadow 160ms ease,
+        background 160ms ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: color-mix(in srgb, var(--accent) 70%, var(--border-strong));
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
+.search-input::placeholder {
+    color: var(--text-tertiary);
+}
+
 .hero-chip,
 .note-category {
     display: inline-flex;
@@ -241,6 +281,11 @@ h6 {
 
 .home-sections {
     padding: 0 2rem 2rem;
+}
+
+.home-search-results[hidden],
+.home-browse-sections[hidden] {
+    display: none;
 }
 
 .category-header {
@@ -291,6 +336,37 @@ h6 {
 
 .note-summary {
     margin: 0;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.search-result-row .note-link {
+    gap: 0.45rem;
+}
+
+.search-result-row-compact .note-link {
+    grid-column: 1 / -1;
+}
+
+.search-copy {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.search-match,
+.search-snippet {
+    margin: 0;
+}
+
+.search-match {
+    color: var(--text-tertiary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.search-snippet {
     color: var(--text-secondary);
     line-height: 1.6;
 }
@@ -643,6 +719,18 @@ h6 {
     font-size: 0.68em;
 }
 
+.search-hit,
+.note-hit {
+    background: color-mix(in srgb, var(--heading-2) 24%, transparent);
+    color: inherit;
+    border-radius: 0.3rem;
+    padding: 0.03rem 0.2rem;
+}
+
+.note-hit {
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--heading-2) 30%, transparent);
+}
+
 .empty-state,
 .missing-view,
 .loading-view {
@@ -676,6 +764,15 @@ h6 {
 }
 
 @media (max-width: 860px) {
+    .hero-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .search-panel {
+        justify-self: stretch;
+        width: 100%;
+    }
+
     .note-row {
         grid-template-columns: 1fr;
     }
