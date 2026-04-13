@@ -114,6 +114,9 @@ The last example means:
 - change the displayed title to `Copula Forms`
 - change the URL/file ID to `copula-forms`
 
+When you use `--new-id`, the CLI now also rewrites internal note links of the form
+`#/notes/old-id` across `content/notes/*.html` before rebuilding `dist/`.
+
 ### Delete A Note
 
 ```bash

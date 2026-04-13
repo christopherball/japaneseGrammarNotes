@@ -2,7 +2,7 @@
 
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
-import { mkdir, readFile, rename, rm, stat, writeFile } from "node:fs/promises";
+import { mkdir, readFile, readdir, rename, rm, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 import sanitizeHtml from "sanitize-html";
@@ -210,6 +210,7 @@ async function editNote(options) {
         await rename(oldPath, nextPath);
         note.slug = newSlug;
         note.fragmentPath = relativeFragmentPath(newSlug);
+        await rewriteInternalNoteLinks(slug, newSlug);
     }
 
     if (options.title) {
@@ -356,6 +357,26 @@ async function finalizeMutation(options, successMessage) {
     }
 
     console.log(`${successMessage}\nRebuilt dist/.`);
+}
+
+async function rewriteInternalNoteLinks(oldSlug, newSlug) {
+    const noteFiles = await readdir(notesDirectory, { withFileTypes: true });
+
+    for (const entry of noteFiles) {
+        if (!entry.isFile() || !entry.name.endsWith(".html")) {
+            continue;
+        }
+
+        const filePath = path.join(notesDirectory, entry.name);
+        const original = await readFile(filePath, "utf8");
+        const updated = original
+            .replaceAll(`href="#/notes/${oldSlug}"`, `href="#/notes/${newSlug}"`)
+            .replaceAll(`href='#/notes/${oldSlug}'`, `href='#/notes/${newSlug}'`);
+
+        if (updated !== original) {
+            await writeFile(filePath, updated);
+        }
+    }
 }
 
 async function rebuildDist() {
