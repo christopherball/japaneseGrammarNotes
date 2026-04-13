@@ -483,6 +483,11 @@ h6 {
     table-layout: fixed;
 }
 
+.note-content .conversion-pattern-table {
+    min-width: 900px;
+    table-layout: fixed;
+}
+
 .note-content th {
     padding: 0.85rem 0.9rem;
     text-align: left;
@@ -606,7 +611,7 @@ h6 {
 
 .note-content .suffix-pattern-table {
     width: auto;
-    min-width: 22rem;
+    min-width: 30rem;
 }
 
 .note-content .suffix-pattern-table th,
