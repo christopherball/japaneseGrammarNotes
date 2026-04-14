@@ -1,6 +1,7 @@
 const appElement = document.querySelector("#app");
-const manifestUrl = "content/notes.json";
-const searchIndexUrl = "content/search-index.json";
+const appVersion = new URL(import.meta.url).searchParams.get("v") || "";
+const manifestUrl = withCacheBust("content/notes.json");
+const searchIndexUrl = withCacheBust("content/search-index.json");
 const categoryOrder = [
     "Sentence Structure",
     "Particles",
@@ -16,6 +17,16 @@ let isSearchIndexReady = false;
 let homeSearchQuery = "";
 
 await init().catch(renderStartupError);
+
+function withCacheBust(resourcePath) {
+    if (!appVersion) {
+        return resourcePath;
+    }
+
+    const url = new URL(resourcePath, window.location.href);
+    url.searchParams.set("v", appVersion);
+    return url.href;
+}
 
 async function init() {
     document.addEventListener("click", handleDocumentClick);
@@ -249,7 +260,7 @@ function renderHome() {
                             type="search"
                             name="query"
                             value="${escapeHtml(homeSearchQuery)}"
-                            placeholder="Try searching for なら, passive, 〜し, or particles"
+                            placeholder="Try searching for なら, passive, 〜し, etc."
                             aria-label="Search notes"
                             autocomplete="off"
                             spellcheck="false"
@@ -497,7 +508,7 @@ async function renderNote(slug, searchQuery = "") {
 }
 
 async function fetchFragment(fragmentPath) {
-    const response = await fetch(fragmentPath, { cache: "no-store" });
+    const response = await fetch(withCacheBust(fragmentPath), { cache: "no-store" });
     if (!response.ok) {
         throw new Error(`Missing fragment at ${fragmentPath}.`);
     }

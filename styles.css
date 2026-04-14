@@ -648,7 +648,6 @@ h6 {
 
 .note-content .conjugation-axis-table {
     width: auto;
-    min-width: 760px;
 }
 
 .note-content .conjugation-axis-table th,
@@ -658,12 +657,12 @@ h6 {
 
 .note-content .axis-label,
 .note-content .axis-left,
+.note-content .axis-note,
 .note-content .axis-arrow-left {
     text-align: left;
 }
 
 .note-content .axis-form {
-    width: 12rem;
     text-align: center;
     font-weight: 600;
 }
@@ -673,13 +672,13 @@ h6 {
     text-align: right;
 }
 
-.note-content .axis-label {
-    width: 7.5rem;
+.note-content td.axis-label {
     color: var(--text-secondary);
 }
 
-.note-content .axis-left,
-.note-content .axis-right {
+.note-content td.axis-left,
+.note-content td.axis-right,
+.note-content td.axis-note {
     font-family: inherit;
     font-size: inherit;
 }
@@ -698,6 +697,42 @@ h6 {
 .note-content .suffix-pattern-table th,
 .note-content .suffix-pattern-table td {
     text-align: left;
+}
+
+.note-content .core-conjugation-table {
+    min-width: 58rem;
+}
+
+.note-content .core-conjugation-table .axis-col-note {
+    width: 7.5rem;
+}
+
+.note-content .core-conjugation-table .axis-col-verb {
+    width: 12.5rem;
+}
+
+.note-content .core-conjugation-table .axis-col-arrow {
+    width: 3rem;
+}
+
+.note-content .core-conjugation-table .axis-col-form {
+    width: 12rem;
+}
+
+.note-content .core-conjugation-table .axis-label {
+    width: 7.5rem;
+}
+
+.note-content .core-conjugation-table .axis-form {
+    width: 12rem;
+}
+
+.note-content .core-conjugation-table .axis-note {
+    text-align: right;
+}
+
+.note-content .irregular-conjugation-table {
+    min-width: 0;
 }
 
 .note-content .verb-intuition-table .form-cell {
@@ -751,6 +786,10 @@ h6 {
 }
 
 .note-content .axis-note {
+    width: 7rem;
+}
+
+.note-content td.axis-note {
     color: var(--text-secondary);
     font-size: 0.94rem;
 }

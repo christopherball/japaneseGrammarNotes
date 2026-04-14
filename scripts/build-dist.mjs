@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-import { copyFile, cp, mkdir, readFile, rm, stat, writeFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
+import { copyFile, cp, mkdir, readdir, readFile, rm, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 
@@ -19,6 +20,8 @@ const targets = [
 await buildDist();
 
 async function buildDist() {
+    const buildVersion = await createBuildVersion();
+
     await rm(distRoot, { recursive: true, force: true });
     await mkdir(distRoot, { recursive: true });
 
@@ -38,12 +41,14 @@ async function buildDist() {
     }
 
     await writeSearchIndex();
+    await stampIndexHtml(buildVersion);
 
     console.log("Built deployable site into dist/");
     for (const target of targets) {
         console.log(`- ${target.destination}`);
     }
     console.log("- content/search-index.json");
+    console.log(`- build version: ${buildVersion}`);
 }
 
 async function assertExists(filePath, label) {
@@ -65,6 +70,74 @@ async function writeSearchIndex() {
 
     await mkdir(path.dirname(searchIndexDestination), { recursive: true });
     await writeFile(searchIndexDestination, `${JSON.stringify(searchIndex, null, 2)}\n`);
+}
+
+async function createBuildVersion() {
+    const hash = createHash("sha256");
+    const inputFiles = await collectBuildInputFiles();
+
+    for (const filePath of inputFiles) {
+        hash.update(path.relative(repoRoot, filePath));
+        hash.update("\n");
+        hash.update(await readFile(filePath));
+        hash.update("\n");
+    }
+
+    return hash.digest("hex").slice(0, 12);
+}
+
+async function collectBuildInputFiles() {
+    const files = [];
+
+    for (const target of targets) {
+        const sourcePath = path.join(repoRoot, target.source);
+
+        await assertExists(sourcePath, target.source);
+
+        if (target.type === "directory") {
+            files.push(...(await listFilesRecursive(sourcePath)));
+            continue;
+        }
+
+        files.push(sourcePath);
+    }
+
+    return files.sort((left, right) => left.localeCompare(right));
+}
+
+async function listFilesRecursive(directoryPath) {
+    const entries = await readdir(directoryPath, { withFileTypes: true });
+    const sortedEntries = entries.sort((left, right) => left.name.localeCompare(right.name));
+    const files = [];
+
+    for (const entry of sortedEntries) {
+        const entryPath = path.join(directoryPath, entry.name);
+
+        if (entry.isDirectory()) {
+            files.push(...(await listFilesRecursive(entryPath)));
+            continue;
+        }
+
+        if (entry.isFile()) {
+            files.push(entryPath);
+        }
+    }
+
+    return files;
+}
+
+async function stampIndexHtml(buildVersion) {
+    const distIndexPath = path.join(distRoot, "index.html");
+    const originalHtml = await readFile(distIndexPath, "utf8");
+    const stampedHtml = originalHtml
+        .replace('href="styles.css"', `href="styles.css?v=${buildVersion}"`)
+        .replace('src="app.js"', `src="app.js?v=${buildVersion}"`);
+
+    if (stampedHtml === originalHtml) {
+        throw new Error("Unable to apply cache-busting URLs to dist/index.html.");
+    }
+
+    await writeFile(distIndexPath, stampedHtml);
 }
 
 function createSearchEntry(note, fragment) {
