@@ -564,6 +564,11 @@ h6 {
     table-layout: fixed;
 }
 
+.note-content .verb-intuition-table {
+    min-width: 1040px;
+    table-layout: fixed;
+}
+
 .note-content th {
     padding: 0.85rem 0.9rem;
     text-align: left;
@@ -693,6 +698,50 @@ h6 {
 .note-content .suffix-pattern-table th,
 .note-content .suffix-pattern-table td {
     text-align: left;
+}
+
+.note-content .verb-intuition-table .form-cell {
+    width: 8.75rem;
+    font-weight: 600;
+    vertical-align: top;
+}
+
+.note-content .verb-intuition-table .verb {
+    white-space: nowrap;
+}
+
+.note-content .verb-intuition-table .group-start td:not(.form-cell) {
+    padding-bottom: 0.35rem;
+    border-bottom: none;
+}
+
+.note-content .verb-intuition-table .group-mid td {
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+    border-bottom: none;
+}
+
+.note-content .verb-intuition-table .group-end td {
+    padding-top: 0.35rem;
+}
+
+.note-content .verb-intuition-table .ex {
+    margin-bottom: 0;
+}
+
+.note-content .verb-intuition-table tr.group-start:hover td,
+.note-content .verb-intuition-table tr.group-start:hover + tr.group-mid td,
+.note-content .verb-intuition-table tr.group-start:hover + tr.group-mid + tr.group-end td,
+.note-content .verb-intuition-table tr.group-start:hover .form-cell,
+.note-content .verb-intuition-table tr.group-start:has(+ tr.group-mid:hover) td,
+.note-content .verb-intuition-table tr.group-start:has(+ tr.group-mid:hover) + tr.group-mid td,
+.note-content .verb-intuition-table tr.group-start:has(+ tr.group-mid:hover) + tr.group-mid + tr.group-end td,
+.note-content .verb-intuition-table tr.group-start:has(+ tr.group-mid:hover) .form-cell,
+.note-content .verb-intuition-table tr.group-start:has(+ tr.group-mid + tr.group-end:hover) td,
+.note-content .verb-intuition-table tr.group-start:has(+ tr.group-mid + tr.group-end:hover) + tr.group-mid td,
+.note-content .verb-intuition-table tr.group-start:has(+ tr.group-mid + tr.group-end:hover) + tr.group-mid + tr.group-end td,
+.note-content .verb-intuition-table tr.group-start:has(+ tr.group-mid + tr.group-end:hover) .form-cell {
+    background: var(--bg-secondary);
 }
 
 .table-scroll.table-scroll-compact {

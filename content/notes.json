@@ -88,5 +88,14 @@
     "fragmentPath": "content/notes/verb-conjugation.html",
     "createdAt": "2026-04-11T00:21:19Z",
     "updatedAt": "2026-04-11T00:21:19Z"
+  },
+  {
+    "slug": "building-verb-intuition",
+    "title": "Building Verb Intuition",
+    "summary": "Showcases how to formulate intuitive phrasing based on verb valency and form.",
+    "category": "Conjugation",
+    "fragmentPath": "content/notes/building-verb-intuition.html",
+    "createdAt": "2026-04-14T15:44:22Z",
+    "updatedAt": "2026-04-14T16:18:30Z"
   }
 ]
