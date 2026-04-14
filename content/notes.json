@@ -78,7 +78,16 @@
     "category": "Constructions",
     "fragmentPath": "content/notes/v1-te-v2-patterns.html",
     "createdAt": "2026-04-10T19:05:00.000Z",
-    "updatedAt": "2026-04-10T19:05:00.000Z"
+    "updatedAt": "2026-04-14T18:39:42Z"
+  },
+  {
+    "slug": "masu-stem-compound-verbs",
+    "title": "ます Stem Compound Verbs",
+    "summary": "Shows how common V2 verbs shape the meaning of compounds built from the ます stem.",
+    "category": "Constructions",
+    "fragmentPath": "content/notes/masu-stem-compound-verbs.html",
+    "createdAt": "2026-04-14T18:39:42Z",
+    "updatedAt": "2026-04-14T18:39:42Z"
   },
   {
     "slug": "verb-conjugation",
