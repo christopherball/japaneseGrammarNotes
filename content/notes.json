@@ -1,5 +1,14 @@
 [
   {
+    "slug": "building-verb-intuition",
+    "title": "Building Verb Intuition",
+    "summary": "Showcases how to formulate intuitive phrasing based on verb valency and form.",
+    "category": "Conjugation",
+    "fragmentPath": "content/notes/building-verb-intuition.html",
+    "createdAt": "2026-04-14T15:44:22Z",
+    "updatedAt": "2026-04-14T16:18:30Z"
+  },
+  {
     "slug": "copula-conjugations",
     "title": "Copula Conjugations",
     "summary": "Reference tables for plain, polite, honorific, and written Japanese copula forms.",
@@ -9,67 +18,22 @@
     "updatedAt": "2026-04-10T18:22:41.811Z"
   },
   {
-    "slug": "clauses-predicates",
-    "title": "Clauses & Predicates",
-    "summary": "Provides an overview of how these easily confused grammar terms function with respect to Japanese sentences.",
-    "category": "Sentence Structure",
-    "fragmentPath": "content/notes/clauses-predicates.html",
-    "createdAt": "2026-04-10T18:43:06.736Z",
-    "updatedAt": "2026-04-10T18:43:06.736Z"
+    "slug": "verb-conjugation",
+    "title": "Verb Conjugation",
+    "summary": "Two-sided reference tables for godan, ichidan, irregular, and て-form / た-form verb conjugations.",
+    "category": "Conjugation",
+    "fragmentPath": "content/notes/verb-conjugation.html",
+    "createdAt": "2026-04-11T00:21:19Z",
+    "updatedAt": "2026-04-11T00:21:19Z"
   },
   {
-    "slug": "clause-linkers",
-    "title": "Clause Linkers",
-    "summary": "Compares major Japanese clause linkers such as から, ので, けど, が, のに, と, たら, ば, なら, and ても / でも.",
-    "category": "Sentence Structure",
-    "fragmentPath": "content/notes/clause-linkers.html",
-    "createdAt": "2026-04-12T23:45:00.000Z",
-    "updatedAt": "2026-04-12T23:45:00.000Z"
-  },
-  {
-    "slug": "listing-markers",
-    "title": "Listing Markers",
-    "summary": "Compares Japanese listing markers such as と, や, とか〜とか, and 〜も〜も.",
-    "category": "Sentence Structure",
-    "fragmentPath": "content/notes/listing-markers.html",
-    "createdAt": "2026-04-13T00:45:00.000Z",
-    "updatedAt": "2026-04-13T00:45:00.000Z"
-  },
-  {
-    "slug": "sentence-connectors",
-    "title": "Sentence Connectors",
-    "summary": "Compares sentence-level Japanese connectors such as そして, それから, それに, だから, でも, and しかし.",
-    "category": "Sentence Structure",
-    "fragmentPath": "content/notes/sentence-connectors.html",
-    "createdAt": "2026-04-13T00:10:00.000Z",
-    "updatedAt": "2026-04-13T00:10:00.000Z"
-  },
-  {
-    "slug": "additive-linkers",
-    "title": "Additive Linkers",
-    "summary": "Compares clause and predicate additive linkers such as 〜て, 〜し, 〜で, and 〜くて.",
-    "category": "Sentence Structure",
-    "fragmentPath": "content/notes/additive-linkers.html",
-    "createdAt": "2026-04-12T23:30:00.000Z",
-    "updatedAt": "2026-04-12T23:30:00.000Z"
-  },
-  {
-    "slug": "common-japanese-particles",
-    "title": "Common Japanese Particles",
-    "summary": "Provides a breakdown of how most Japanese particles work.",
-    "category": "Particles",
-    "fragmentPath": "content/notes/common-japanese-particles.html",
-    "createdAt": "2026-04-12T19:58:23.363Z",
-    "updatedAt": "2026-04-12T19:58:23.363Z"
-  },
-  {
-    "slug": "conversions",
-    "title": "Conversions",
-    "summary": "Common Japanese conversion patterns between nouns, adjectives, adverbs, and verbs.",
-    "category": "Parts of Speech",
-    "fragmentPath": "content/notes/conversions.html",
-    "createdAt": "2026-04-10T18:22:19.744Z",
-    "updatedAt": "2026-04-10T18:22:19.744Z"
+    "slug": "casual-reductions",
+    "title": "Casual Reductions",
+    "summary": "A compact reference for common casual Japanese reductions and compressed spoken forms, showing what fuller Japanese they map to and how to interpret them while reading.",
+    "category": "Constructions",
+    "fragmentPath": "content/notes/casual-reductions.html",
+    "createdAt": "2026-04-15T15:46:05.264Z",
+    "updatedAt": "2026-04-15T15:46:05.264Z"
   },
   {
     "slug": "v1-te-v2-how-v2-shapes-meaning",
@@ -90,21 +54,66 @@
     "updatedAt": "2026-04-14T18:39:42Z"
   },
   {
-    "slug": "verb-conjugation",
-    "title": "Verb Conjugation",
-    "summary": "Two-sided reference tables for godan, ichidan, irregular, and て-form / た-form verb conjugations.",
-    "category": "Conjugation",
-    "fragmentPath": "content/notes/verb-conjugation.html",
-    "createdAt": "2026-04-11T00:21:19Z",
-    "updatedAt": "2026-04-11T00:21:19Z"
+    "slug": "common-japanese-particles",
+    "title": "Common Japanese Particles",
+    "summary": "Provides a breakdown of how most Japanese particles work.",
+    "category": "Particles",
+    "fragmentPath": "content/notes/common-japanese-particles.html",
+    "createdAt": "2026-04-12T19:58:23.363Z",
+    "updatedAt": "2026-04-12T19:58:23.363Z"
   },
   {
-    "slug": "building-verb-intuition",
-    "title": "Building Verb Intuition",
-    "summary": "Showcases how to formulate intuitive phrasing based on verb valency and form.",
-    "category": "Conjugation",
-    "fragmentPath": "content/notes/building-verb-intuition.html",
-    "createdAt": "2026-04-14T15:44:22Z",
-    "updatedAt": "2026-04-14T16:18:30Z"
+    "slug": "conversions",
+    "title": "Conversions",
+    "summary": "Common Japanese conversion patterns between nouns, adjectives, adverbs, and verbs.",
+    "category": "Parts of Speech",
+    "fragmentPath": "content/notes/conversions.html",
+    "createdAt": "2026-04-10T18:22:19.744Z",
+    "updatedAt": "2026-04-10T18:22:19.744Z"
+  },
+  {
+    "slug": "additive-linkers",
+    "title": "Additive Linkers",
+    "summary": "Compares clause and predicate additive linkers such as 〜て, 〜し, 〜で, and 〜くて.",
+    "category": "Sentence Structure",
+    "fragmentPath": "content/notes/additive-linkers.html",
+    "createdAt": "2026-04-12T23:30:00.000Z",
+    "updatedAt": "2026-04-12T23:30:00.000Z"
+  },
+  {
+    "slug": "clause-linkers",
+    "title": "Clause Linkers",
+    "summary": "Compares major Japanese clause linkers such as から, ので, けど, が, のに, と, たら, ば, なら, and ても / でも.",
+    "category": "Sentence Structure",
+    "fragmentPath": "content/notes/clause-linkers.html",
+    "createdAt": "2026-04-12T23:45:00.000Z",
+    "updatedAt": "2026-04-12T23:45:00.000Z"
+  },
+  {
+    "slug": "clauses-predicates",
+    "title": "Clauses & Predicates",
+    "summary": "Provides an overview of how these easily confused grammar terms function with respect to Japanese sentences.",
+    "category": "Sentence Structure",
+    "fragmentPath": "content/notes/clauses-predicates.html",
+    "createdAt": "2026-04-10T18:43:06.736Z",
+    "updatedAt": "2026-04-10T18:43:06.736Z"
+  },
+  {
+    "slug": "listing-markers",
+    "title": "Listing Markers",
+    "summary": "Compares Japanese listing markers such as と, や, とか〜とか, and 〜も〜も.",
+    "category": "Sentence Structure",
+    "fragmentPath": "content/notes/listing-markers.html",
+    "createdAt": "2026-04-13T00:45:00.000Z",
+    "updatedAt": "2026-04-13T00:45:00.000Z"
+  },
+  {
+    "slug": "sentence-connectors",
+    "title": "Sentence Connectors",
+    "summary": "Compares sentence-level Japanese connectors such as そして, それから, それに, だから, でも, and しかし.",
+    "category": "Sentence Structure",
+    "fragmentPath": "content/notes/sentence-connectors.html",
+    "createdAt": "2026-04-13T00:10:00.000Z",
+    "updatedAt": "2026-04-13T00:10:00.000Z"
   }
 ]
