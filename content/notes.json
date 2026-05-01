@@ -72,6 +72,15 @@
     "updatedAt": "2026-04-10T18:22:19.744Z"
   },
   {
+    "slug": "dictionary-structure-markers",
+    "title": "Dictionary Structure Markers",
+    "summary": "Reference table for navigating common J-J dictionary structure markers.",
+    "category": "Parts of Speech",
+    "fragmentPath": "content/notes/dictionary-structure-markers.html",
+    "createdAt": "2026-05-01T16:15:59.356Z",
+    "updatedAt": "2026-05-01T16:15:59.356Z"
+  },
+  {
     "slug": "additive-linkers",
     "title": "Additive Linkers",
     "summary": "Compares clause and predicate additive linkers such as 〜て, 〜し, 〜で, and 〜くて.",
